@@ -1,0 +1,77 @@
+﻿@model Nhom8_Web.Models.DichVu
+
+@{
+    ViewBag.Title = "Delete";
+}
+<div class="container">
+
+    <h2>Xóa sản phẩm</h2>
+
+    <h3>Bạn có thật sự muốn xóa sản phẩm này không?</h3>
+    <div>
+        <h4>DichVu</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.TenDichVu)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TenDichVu)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.SoLuong)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.SoLuong)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.MoTa)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.MoTa)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.GiaTien)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.GiaTien)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.HinhAnh)
+            </dt>
+
+            <dd>
+                @if (Model.HinhAnh != null)
+                {
+                    <img src="data:image;base64,@System.Convert.ToBase64String(Model.HinhAnh)"
+                         style="width: 200px;" />
+                }
+                else
+                {
+                    <!-- Hiển thị hình ảnh rỗng hoặc thông báo khác khi HinhAnh là null -->
+                    <span>No Image</span>
+                }
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="custom-button" /> 
+                <a href="@Url.Action("Index")" class="custom-button">Quay lại danh sách</a>
+            </div>
+        }
+    </div>
+
+</div>

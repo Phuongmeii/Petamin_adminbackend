@@ -1,0 +1,223 @@
+﻿@model Nhom8_Web.Models.KhachHang
+
+@{
+    ViewBag.Title = "Trang_dang_ky";
+}
+
+<!--====== App Content ======-->
+<div class="app-content">
+
+    <!--====== Section 1 ======-->
+    <div class="u-s-p-y-60">
+
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="breadcrumb">
+                    <div class="breadcrumb__wrap">
+                        <ul class="breadcrumb__list">
+                            <li class="has-separator">
+
+                                <a href="@Url.Action("index", "Home")">Home</a>
+                            </li>
+                            <li class="is-marked">
+
+                                <a href="@Url.Action("Trang_dang_ky", "Home")">Đăng ký</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== End - Section 1 ======-->
+    <!--====== Section 2 ======-->
+    <div class="u-s-p-b-60">
+
+        <!--====== Section Intro ======-->
+        <div class="section__intro u-s-m-b-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__text-wrap">
+                            <h1 class="section__heading u-c-secondary">TẠO TÀI KHOẢN</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Intro ======-->
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="row row--center">
+                    <div class="col-lg-6 col-md-8 u-s-m-b-30">
+                        <div class="l-f-o">
+                            <div class="l-f-o__pad-box">
+                                <h1 class="gl-h1">THÔNG TIN CÁ NHÂN</h1>
+                                <form class="l-f-o__form">
+                                    <div class="gl-s-api">
+                                        <div class="u-s-m-b-15">
+
+                                            <button class="gl-s-api__btn gl-s-api__btn--fb" type="button">
+                                                <i class="fab fa-facebook-f"></i>
+
+                                                <span>Đăng nhập với Facebook</span>
+                                            </button>
+                                        </div>
+                                        <div class="u-s-m-b-30">
+
+                                            <button class="gl-s-api__btn gl-s-api__btn--gplus" type="button">
+                                                <i class="fab fa-google"></i>
+
+                                                <span>Đăng nhập với Google</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="u-s-m-b-30">
+
+                                        <label class="gl-label" for="reg-fname">Họ *</label>
+
+                                        <input class="input-text input-text--primary-style" type="text" id="reg-fname" placeholder="First Name">
+                                    </div>
+                                    <div class="u-s-m-b-30">
+
+                                        <label class="gl-label" for="reg-lname">Tên *</label>
+
+                                        <input class="input-text input-text--primary-style" type="text" id="reg-lname" placeholder="Last Name">
+                                    </div>
+                                    <div class="gl-inline">
+                                        <div class="u-s-m-b-30">
+
+                                            <!--====== Date of Birth Select-Box ======-->
+
+                                            <span class="gl-label">Sinh nhật</span>
+                                            <div class="gl-dob">
+                                                <select class="select-box select-box--primary-style">
+                                                    <option selected>Ngày</option>
+                                                    <option value="01">01</option>
+                                                    <option value="02">02</option>
+                                                    <option value="03">03</option>
+                                                    <option value="04">04</option>
+                                                    <option value="04">05</option>
+                                                    <option value="04">06</option>
+                                                    <option value="04">07</option>
+                                                    <option value="04">08</option>
+                                                    <option value="04">09</option>
+                                                    <option value="04">10</option>
+                                                    <option value="04">11</option>
+                                                    <option value="04">12</option>
+                                                    <option value="04">13</option>
+                                                    <option value="04">14</option>
+                                                    <option value="04">15</option>
+                                                    <option value="04">16</option>
+                                                    <option value="04">17</option>
+                                                    <option value="04">18</option>
+                                                    <option value="04">19</option>
+                                                    <option value="04">20</option>
+                                                    <option value="04">21</option>
+                                                    <option value="04">22</option>
+                                                    <option value="04">23</option>
+                                                    <option value="04">24</option>
+                                                    <option value="04">25</option>
+                                                    <option value="04">26</option>
+                                                    <option value="04">27</option>
+                                                    <option value="04">28</option>
+                                                    <option value="04">29</option>
+                                                    <option value="04">30</option>
+                                                    <option value="04">31</option>
+
+
+                                                </select><select class="select-box select-box--primary-style">
+                                                    <option selected>Tháng</option>
+                                                    <option value="male">Tháng 1</option>
+                                                    <option value="male">Tháng 2</option>
+                                                    <option value="male">Tháng 3</option>
+                                                    <option value="male">Tháng 4</option>
+                                                    <option value="male">Tháng 5</option>
+                                                    <option value="male">Tháng 6</option>
+                                                    <option value="male">Tháng 7</option>
+                                                    <option value="male">Tháng 8</option>
+                                                    <option value="male">Tháng 9</option>
+                                                    <option value="male">Tháng 10</option>
+                                                    <option value="male">Tháng 11</option>
+                                                    <option value="male">Tháng 12</option>
+                                                </select><select class="select-box select-box--primary-style">
+                                                    <option selected>Năm</option>
+                                                    <option value="1994">1980</option>
+                                                    <option value="1994">1981</option>
+                                                    <option value="1994">1982</option>
+                                                    <option value="1994">1983</option>
+                                                    <option value="1994">1984</option>
+                                                    <option value="1994">1985</option>
+                                                    <option value="1994">1986</option>
+                                                    <option value="1994">1987</option>
+                                                    <option value="1994">1988</option>
+                                                    <option value="1994">1989</option>
+                                                    <option value="1994">1990</option>
+                                                    <option value="1991">1991</option>
+                                                    <option value="1992">1992</option>
+                                                    <option value="1993">1993</option>
+                                                    <option value="1994">1994</option>
+                                                    <option value="1994">1995</option>
+                                                    <option value="1994">1996</option>
+                                                    <option value="1994">1997</option>
+                                                    <option value="1994">1998</option>
+                                                    <option value="1994">1999</option>
+                                                    <option value="1994">2000</option>
+                                                    <option value="1994">2001</option>
+                                                    <option value="1994">2002</option>
+                                                    <option value="1994">2003</option>
+                                                    <option value="1994">2004</option>
+                                                    <option value="1994">2005</option>
+                                                    <option value="1994">2006</option>
+                                                    <option value="1994">2007</option>
+                                                    <option value="1994">2008</option>
+                                                    <option value="1994">2009</option>
+                                                    <option value="1994">2010</option>
+                                                    <option value="1994">2011</option>
+                                                    <option value="1994">2012</option>
+
+                                                </select>
+                                            </div>
+                                            <!--====== End - Date of Birth Select-Box ======-->
+                                        </div>
+                                        <div class="u-s-m-b-30">
+
+                                            <label class="gl-label" for="gender">GIỚI TÍNH</label><select class="select-box select-box--primary-style u-w-100" id="gender">
+                                                <option selected>Lựa chọn</option>
+                                                <option value="male">Nam</option>
+                                                <option value="male">Nữ</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="u-s-m-b-30">
+
+                                        <label class="gl-label" for="reg-email">E-MAIL *</label>
+
+                                        <input class="input-text input-text--primary-style" type="text" id="reg-email" placeholder="Nhập E-mail">
+                                    </div>
+                                    <div class="u-s-m-b-30">
+
+                                        <label class="gl-label" for="reg-password">MẬT KHẨU *</label>
+
+                                        <input class="input-text input-text--primary-style" type="text" id="reg-password" placeholder="Nhập mật khẩu">
+                                    </div>
+                                    <div class="u-s-m-b-15">
+
+                                        <button class="btn btn--e-transparent-brand-b-2" type="submit">TẠO</button>
+                                    </div>
+
+                                    <a class="gl-link" href="#">Quay lại cửa hàng</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Content ======-->
+    </div>
+    <!--====== End - Section 2 ======-->
+</div>
+<!--====== End - App Content ======-->

@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "empty_tim_kiem";
+}
+
+
+
+<!--====== App Content ======-->
+<div class="app-content">
+
+    <!--====== Section 1 ======-->
+    <div class="u-s-p-y-60">
+
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 u-s-m-b-30">
+                        <div class="empty">
+                            <div class="empty__wrap">
+
+                                <span class="empty__big-text">XIN LỖI</span>
+
+                                <span class="empty__text-1">Sản phẩm, dịch vụ bạn đang tìm kiếm không tồn tại. Hãy thử lại với từ khóa khác</span>
+
+                                <span class="empty__text-2">
+                                    Mọi người cũng tìm kiếm:
+
+                                    <a href="@Url.Action("Trang_san_pham", "Home")">Thức ăn thú cưng</a>
+
+                                    <a href="@Url.Action("Trang_dich_vu", "Home")">Tiêm phòng</a>
+
+                                    <a href="@Url.Action("Trang_san_pham", "Home")">Phụ kiện</a>
+                                </span>
+                                <form class="empty__search-form">
+
+                                    <label for="search-label"></label>
+
+                                    <input class="input-text input-text--primary-style" type="text" id="search-label" placeholder="Search Keywords">
+
+                                    <button class="btn btn--icon fas fa-search" type="submit"></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Content ======-->
+    </div>
+    <!--====== End - Section 1 ======-->
+</div>
+<!--====== End - App Content ======-->

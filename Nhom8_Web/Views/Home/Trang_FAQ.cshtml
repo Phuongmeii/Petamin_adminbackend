@@ -1,0 +1,154 @@
+﻿
+@{
+    ViewBag.Title = "Trang_FAQ";
+}
+
+
+<!--====== App Content ======-->
+<div class="app-content">
+
+    <!--====== Section 1 ======-->
+    <div class="u-s-p-y-60">
+
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="breadcrumb">
+                    <div class="breadcrumb__wrap">
+                        <ul class="breadcrumb__list">
+                            <li class="has-separator">
+
+                                <a href="@Url.Action("index", "Home")">Home</a>
+                            </li>
+                            <li class="is-marked">
+
+                                <a href="@Url.Action("Trang_FAQ", "Home")">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== End - Section 1 ======-->
+    <!--====== Section 2 ======-->
+    <div class="u-s-p-b-60">
+
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="faq">
+                            <h3 class="faq__heading">NHỮNG C U HỎI THƯỜNG GẶP</h3>
+                            <h3 class="faq__heading">Dưới đây là những câu hỏi Petamin thấy rằng mọi người thường thắc mắc. Bạn cùng xem để được giải đáp nhé</h3>
+                            <p class="faq__text">Mọi ý kiến của bạn đều được chúng tôi lắng nghe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Content ======-->
+    </div>
+    <!--====== End - Section 2 ======-->
+    <!--====== Section 3 ======-->
+    <div class="u-s-p-b-60">
+
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="faq-accordion-group">
+                            <div class="faq__list">
+
+                                <a class="faq__question collapsed" href="@Url.Action("Trang_FAQ", "Home")" data-toggle="collapse">Điều kiện đổi trả tại PETAMIN</a>
+                                <div class="faq__answer collapse" id="faq-1" data-parent="#faq-accordion-group">
+                                    <p class="faq__text">
+                                        <li> Sản phẩm còn nguyên vẹn, chưa qua sử dụng, không có dấu hiệu hư hỏng, mất mát.</li>
+                                        <li>Sản phẩm còn nguyên tem, mác, nhãn, bao bì.</li>
+                                        <li>Sản phẩm còn trong thời hạn đổi trả theo quy định của cửa hàng.</li>
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="faq__list">
+
+                                <a class="faq__question collapsed" href="@Url.Action("Trang_FAQ", "Home")" data-toggle="collapse">Trường hợp không được đổi trả</a>
+                                <div class="faq__answer collapse" id="faq-2" data-parent="#faq-accordion-group">
+                                    <p class="faq__text">
+                                        <ul>
+                                            <li>Sản phẩm đã qua sử dụng, hư hỏng, mất mát, không còn nguyên vẹn.</li>
+                                            <li> Sản phẩm không còn nguyên tem, mác, nhãn, bao bì.</li>
+                                            <li> Sản phẩm đã hết thời hạn đổi trả.</li>
+                                        </ul>
+
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq__list">
+
+                                <a class="faq__question collapsed" href="@Url.Action("Trang_FAQ", "Home")" data-toggle="collapse">Làm sao để theo dõi đơn hàng ?</a>
+                                <div class="faq__answer collapse" id="faq-3" data-parent="#faq-accordion-group">
+                                    <p class="faq__text">
+                                        <ol>
+                                            <li>Kiểm tra email xác nhận đơn hàng</li>
+                                            <li>Tra cứu mã vận đơn</li>
+                                            <li>Liên hệ với cửa hàng</li>
+                                        </ol>
+
+                                </div>
+                            </div>
+                            <div class="faq__list">
+
+                                <a class="faq__question collapsed" href="@Url.Action("Trang_FAQ", "Home")" data-toggle="collapse">Các dịch vụ dành cho thú cưng phổ biến nhất tại PETAMIN là gì?</a>
+                                <div class="faq__answer collapse" id="faq-4" data-parent="#faq-accordion-group">
+                                    <p class="faq__text">
+                                        <ul>
+                                            <li>Cắt tỉa lông thú cưng</li>
+                                            <li>Huấn luyện thú cưng</li>
+                                            <li> Làm đẹp thú cưng</li>
+                                            <li>Tắm rửa thú cưng</li>
+                                    </p>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="faq__list">
+
+                                <a class="faq__question collapsed" href="@Url.Action("Trang_FAQ", "Home")" data-toggle="collapse">PETAMIN có bán thú cưng không ?</a>
+                                <div class="faq__answer collapse" id="faq-5" data-parent="#faq-accordion-group">
+                                    <p class="faq__text">Tại đây, PETAMIN chỉ cung cấp thực phẩm và các dịch vụ chăm sóc thú cưng. Hiện tại chưa có mua bán thú cưng</p>
+                                </div>
+                            </div>
+                            <div class="faq__list">
+
+                                <a class="faq__question collapsed" href="@Url.Action("Trang_FAQ", "Home")" data-toggle="collapse">Thú cưng cần được huấn luyện như thế nào ?</a>
+                                <div class="faq__answer collapse" id="faq-6" data-parent="#faq-accordion-group">
+                                    <p class="faq__text">Huấn luyện thú cưng là một quá trình cần có thời gian và sự kiên nhẫn. Bạn nên bắt đầu huấn luyện thú cưng từ khi thú cưng còn nhỏ. Các kỹ năng cơ bản cần huấn luyện cho thú cưng bao gồm:</p>
+                                    <ul>
+                                        <li>Đi vệ sinh đúng chỗ</li>
+                                        <li>Chạy theo hiệu lệnh</li>
+                                        <li>Tập đứng bằng 2 chân</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="faq__list">
+
+                                <a class="faq__question collapsed" href="@Url.Action("Trang_FAQ", "Home")" data-toggle="collapse">Giá cả của các sản phẩm dành cho thú cưng như thế nào?</a>
+                                <div class="faq__answer collapse" id="faq-7" data-parent="#faq-accordion-group">
+                                    <p class="faq__text"> Giá cả của các sản phẩm dành cho thú cưng dao động tùy theo loại sản phẩm, thương hiệu và chất lượng của sản phẩm.  Nhìn chung, giá cả của các sản phẩm dành cho thú cưng thường dao động từ vài chục nghìn đến vài trăm ngàn đồng.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== End - Section Content ======-->
+</div>
+<!--====== End - Section 3 ======-->
+        </div>
+<!--====== End - App Content ======-->

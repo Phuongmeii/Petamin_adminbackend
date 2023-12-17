@@ -1,0 +1,38 @@
+﻿/* Tùy chỉnh kiểu dáng của nút */
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px; /* Điều chỉnh lề và độ rộng của nút */
+    font-size: 14px; /* Điều chỉnh kích thước chữ */
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #3498db; /* Màu viền của nút */
+    color: #ffffff; /* Màu chữ của nút */
+    background-color: #3498db; /* Màu nền của nút */
+    border-radius: 5px; /* Cong mép của nút */
+}
+
+    /* Hover effect khi di chuột qua nút */
+    .custom-button:hover {
+        background-color: #2980b9; /* Màu nền thay đổi khi di chuột qua */
+        border-color: #2980b9; /* Màu viền thay đổi khi di chuột qua */
+    }
+/* Tùy chỉnh kiểu dáng của liên kết */
+.custom-link {
+    display: inline-block;
+    padding: 10px 20px; /* Điều chỉnh lề và độ rộng của liên kết */
+    font-size: 14px; /* Điều chỉnh kích thước chữ */
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #3498db; /* Màu viền của liên kết */
+    color: #3498db; /* Màu chữ của liên kết */
+    background-color: #ffffff; /* Màu nền của liên kết */
+    border-radius: 3px; /* Cong mép của liên kết */
+}
+
+    /* Hover effect khi di chuột qua liên kết */
+    .custom-link:hover {
+        background-color: #3498db; /* Màu nền thay đổi khi di chuột qua */
+        color: #ffffff; /* Màu chữ thay đổi khi di chuột qua */
+    }

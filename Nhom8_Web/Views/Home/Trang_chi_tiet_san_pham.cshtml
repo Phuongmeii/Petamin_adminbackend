@@ -1,0 +1,976 @@
+﻿
+@{
+    ViewBag.Title = "Trang_chi_tiet_san_pham";
+}
+<!--====== Nội dung trang chi tiết sản phẩm ======-->
+<div class="app-content">
+
+    <!--====== Hình ảnh và một số thông tin SP ======-->
+    <div class="u-s-p-t-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+
+                    <!--====== Đường dẫn sản phẩm ======-->
+                    <!--====== Đường dẫn sản phẩm ======-->
+                    <div class="pd-breadcrumb u-s-m-b-30">
+                        <ul class="pd-breadcrumb__list">
+                            <li class="has-separator">
+
+                                <a href="@Url.Action("Index.html", "Home")">Trang chủ</a>
+                            </li>
+                            <li class="has-separator">
+
+                                <a href="@Url.Action("Trang_san_pham", "Home")">Sản phẩm</a>
+                            </li>
+                            <li class="has-separator">
+
+                                <a href="@Url.Action("Trang_san_pham_2", "Home")">Dinh dưỡng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Kết thúc đường dẫn-->
+                    <!--====== Chi tiết ảnh + giá ======-->
+                    <div class="pd u-s-m-b-30">
+                        <div class="slider-fouc pd-wrap">
+                            <div id="pd-o-initiate">
+                                <!--Màn hình lớn ảnh 1-->
+                                <div class="pd-o-img-wrap"
+                                     data-src="https://media.discordapp.net/attachments/1174352085177864263/1174395296273412236/399996870_633617078718000_3458912288649802191_n.png?ex=65676fd9&is=6554fad9&hm=77ba48e34185f67bdceda8a51f119fac4ac0ea4b0e2dc34f9a658426eab01412&=&width=567&height=567">
+
+                                    <img class="u-img-fluid"
+                                         src="https://media.discordapp.net/attachments/1174352085177864263/1174395296273412236/399996870_633617078718000_3458912288649802191_n.png?ex=65676fd9&is=6554fad9&hm=77ba48e34185f67bdceda8a51f119fac4ac0ea4b0e2dc34f9a658426eab01412&=&width=567&height=567"
+                                         data-zoom-image="https://media.discordapp.net/attachments/1174352085177864263/1174395296273412236/399996870_633617078718000_3458912288649802191_n.png?ex=65676fd9&is=6554fad9&hm=77ba48e34185f67bdceda8a51f119fac4ac0ea4b0e2dc34f9a658426eab01412&=&width=567&height=567"
+                                         alt="">
+                                </div>
+                                <!--Màn hình lớn ảnh 2-->
+                                <div class="pd-o-img-wrap" data-src="images/product/product-d-2.jpg">
+
+                                    <img class="u-img-fluid"
+                                         src="https://media.discordapp.net/attachments/937714098513272885/1174430822707769427/thuc-an-cho-cho-poodlemoshm1.png?ex=656790f0&is=65551bf0&hm=4afd1370d0165614611c9b7d94b0f0630cc4caeea53ce63404f444e981fdd287&=&width=551&height=551"
+                                         data-zoom-image="https://media.discordapp.net/attachments/937714098513272885/1174430822707769427/thuc-an-cho-cho-poodlemoshm1.png?ex=656790f0&is=65551bf0&hm=4afd1370d0165614611c9b7d94b0f0630cc4caeea53ce63404f444e981fdd287&=&width=551&height=551"
+                                         alt="">
+                                </div>
+
+                            </div>
+
+                            <span class="pd-text">Phóng to</span>
+                        </div>
+                        <div class="u-s-m-t-15">
+                            <div class="slider-fouc">
+                                <div id="pd-o-thumbnail">
+                                    <!--Thumbnail ảnh 1-->
+                                    <div>
+                                        <img class="u-img-fluid"
+                                             src="https://media.discordapp.net/attachments/1174352085177864263/1174395296273412236/399996870_633617078718000_3458912288649802191_n.png?ex=65676fd9&is=6554fad9&hm=77ba48e34185f67bdceda8a51f119fac4ac0ea4b0e2dc34f9a658426eab01412&=&width=567&height=567"
+                                             alt="">
+                                    </div>
+                                    <!--Thumbnail ảnh 2-->
+                                    <div>
+
+                                        <img class="u-img-fluid"
+                                             src="https://media.discordapp.net/attachments/937714098513272885/1174430822707769427/thuc-an-cho-cho-poodlemoshm1.png?ex=656790f0&is=65551bf0&hm=4afd1370d0165614611c9b7d94b0f0630cc4caeea53ce63404f444e981fdd287&=&width=551&height=551"
+                                             alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--====== Kết thúc chi tiết ảnh ======-->
+                </div>
+                <div class="col-lg-7">
+
+                    <!--====== Thông tin sp ======-->
+                    <div class="pd-detail">
+                        <div>
+                            <span class="pd-detail__name" style="font-size:30px;color:orangered; font-weight:bold;">THỨC ĂN CHO CHÓ POODLE MOSHM</span>
+                        </div>
+                        <div>
+                            <div class="pd-detail__inline">
+
+                                <span class="pd-detail__price" style="font-style: italic; color: black; font-size:25px;">350.000đ</span>
+
+                            </div>
+                            <div class="u-s-m-b-15">
+                                <div class="pd-detail__rating gl-rating-style">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+
+                                    <span class="pd-detail__review u-s-m-l-4">
+
+                                        <a data-click-scroll="#view-review">23 Đánh giá</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="u-s-m-b-15">
+                                <div class="pd-detail__inline">
+
+                                    <span class="pd-detail__stock">Còn hàng</span>
+
+                                    <span class="pd-detail__left">Còn 3 sản phẩm</span>
+                                </div>
+                            </div>
+                            <div class="u-s-m-b-15" style="color:rgb(69, 50, 28)6, 41, 41">
+
+                                <span class="pd-detail__preview-desc" style="font-size:17;color:gray;">
+                                    Thức ăn cho chó Poodle MOSHM được chế biến
+                                    từ 7 loại thịt và 5 loại cá. Thành phần hoàn toàn từ thiên nhiên, đảm bảo
+                                    cho sức khỏe của cún cưng. Dinh dưỡng cân bằng cung cấp đủ cho nhu cầu của
+                                    chó Poodle ở mọi độ tuổi.
+                                </span>
+                            </div>
+                            <div class="u-s-m-b-15">
+                                <div class="pd-detail__inline">
+
+                                    <span class="pd-detail__click-wrap">
+                                        <i class="far fa-heart u-s-m-r-6"></i>
+
+                                        <a href="@Url.Action("Yeu_thich", "Home")">Thêm vào danh sách yêu thích</a>
+
+                                        <span class="pd-detail__click-count">(22)</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="u-s-m-b-15">
+                                <div class="pd-detail__inline">
+
+                                    <span class="pd-detail__click-wrap">
+                                        <i class="far fa-star u-s-m-r-6"></i>
+
+                                        <a href="@Url.Action("Trang_dang_nhap", "Home")">
+                                            Nhập mã LANHANHCUTE để nhận ưu đãi 10% trên tổng
+                                            đơn hàng
+                                        </a>
+                                </div>
+                            </div>
+                            <!--Gắn tag cho việc tìm kiếm dịch vụ theo mục-->
+                            <div class="u-s-m-b-30">
+                                <span> Từ khóa:</span>
+                                <a href="@Url.Action("Trang_san_pham", "Home")">
+                                    <u><i>Dinh dưỡng, Cún cưng, Thức ăn</i></u>
+                                </a>
+                                <div class="u-s-m-b-15">
+                                    <ul class="pd-social-list">
+                                        <li>
+
+                                            <a class="s-fb--color-hover" href="@Url.Action("index", "Home")">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a class="s-tw--color-hover" href="@Url.Action("index", "Home")">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a class="s-insta--color-hover" href="@Url.Action("index", "Home")">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a class="s-wa--color-hover" href="@Url.Action("index", "Home")">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a class="s-gplus--color-hover" href="@Url.Action("index", "Home")">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="u-s-m-b-15">
+
+                                    <div class="u-s-m-b-30">
+                                        <span> Số lượng:   </span>
+                                        <input type="number" min="1" value="1" id="quantity"
+                                               style="width: 50px;margin-right:5px; padding:5px;border:1px solid #ddd;border-radius: 2px;">
+                                    </div>
+                                    <div class="u-s-m-b-30">
+                                        <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart"
+                                           style="padding:14px; border-radius: 8px;">Thêm vào giỏ hàng</a>
+                                        <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart"
+                                           style="padding:14px; border-radius: 8px;">Mua ngay</a>
+                                    </div>
+                                </div>
+                                <!--====== Hết chi tiết sản phẩm ======-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--====== TẠO tab sản phẩm ======-->
+                <div class="u-s-p-y-90">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-9">
+                                <div class="pd-tab">
+                                    <div class="u-s-m-b-30">
+                                        <ul class="nav pd-tab__list">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-toggle="tab" href="@Url.Action("Trang_san_pham", "Home")">MÔ TẢ</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="infor" data-toggle="tab"
+                                                   href="@Url.Action("Trang_san_pham", "Home")">THÔNG TIN</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="view-review" data-toggle="tab"
+                                                   href="@Url.Action("Trang_san_pham", "Home")">ĐÁNH GIÁ<span>(23)</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content">
+
+                                        <!--====== Tab mô tả sản phẩm ======-->
+                                        <div class="tab-pane fade show active" id="pd-desc">
+                                            <div class="pd-tab__desc">
+                                                <div class="u-s-m-b-20">
+                                                    <p style="text-align:justify">
+                                                        Thức ăn cho chó Poodle MOSHM là một sản phẩm thức ăn cho chó cao
+                                                        cấp được sản xuất bởi MKB Pet Food. Thức ăn được làm từ các
+                                                        nguyên liệu chất lượng cao, bao gồm 75% thịt và cá tươi, 25% rau
+                                                        củ quả. Thức ăn được chế biến theo công thức dinh dưỡng cân
+                                                        bằng, đáp ứng nhu cầu dinh dưỡng của chó Poodle ở mọi lứa tuổi.
+                                                    </p>
+                                                    <img width="100%" src="https://media.discordapp.net/attachments/937714098513272885/1184030426940055582/thuc-an-cho-cho-poodle-moshm2.jpg?ex=658a7d44&is=65780844&hm=5be336eb459c042fa27ed174286a26a5fc184f34bc0e864d7a769c5a6a9bcd2b&=&format=webp&width=1045&height=575"></img>
+                                                    <p>Thành phần động vật chiếm tới 75% thành phần dinh dưỡng của thức ăn cho chó MOSHM. Bao gồm:</p>
+                                                    <div class="u-s-m-b-30">
+                                                        <ul>
+                                                            <li>❖ Thịt: bò, dê, nai, thỏ, vịt, gà, ngỗng</li>
+                                                            <li>❖ Cá: cá hồi, cá ngừ, cá thu, cá trắm đen, cá cơm</li>
+                                                            <li>❖ Phụ phẩm: men bia, dầu hạt lanh, bột trứng, tảo biển, mỡ gà, dầu cá…</li>
+                                                            <li>❖ Rau củ quả: đậu tương, súp lơ xanh, đậu hà lan, cải thảo, khoai tây, khoai lang, cà rốt, táo, nấm, việt quất…</li>
+                                                        </ul>
+                                                    </div>
+                                                    <img width="100%" src="https://media.discordapp.net/attachments/937714098513272885/1184033026427076669/thuc-an-cho-cho-poodle-moshm4.png?ex=658a7faf&is=65780aaf&hm=6f12984e6beb1f6ad17a7c46f6ee1c95c55b31bca4ac5b21bbcbc6284d2a742f&=&format=webp&quality=lossless&width=718&height=395"></img>
+                                                </div>
+                                                <div class="u-s-m-b-30">
+                                                    <p>❤ Khi mua sản phẩm tại cửa hàng, <strong>PETAMIN</strong> đảm bảo cho khách hàng:</p>
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fas fa-check u-s-m-r-8"></i>
+
+                                                            <span>Giá ưu đãi nhất</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check u-s-m-r-8"></i>
+
+                                                            <span>Đổi trả miễn phí, chính sách bảo mật và hoàn trả rõ ràng</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-check u-s-m-r-8"></i>
+
+                                                            <span>Đa dạng hình thức thanh toán</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--kết thúc tab mô tả-->
+                                        <!--Bắt đầu tab thông tin-->
+                                        <div class="tab-pane" id="pd-infor">
+                                            <div class="pd-tab__inf" style="width: 100%;">
+                                                <div class="u-s-m-b-20">
+                                                    <div class="pd-table">
+                                                        <table width="100%" cellpadding="10">
+                                                            <caption><b>THÔNG TIN</b></caption>
+                                                            <tr>
+                                                                <th style="font-weight: bold;">Tiêu chí</th>
+                                                                <th>Nội dung</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Nhãn hiệu</td>
+                                                                <td>MOSHM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Đối tượng sử dụng</td>
+                                                                <td>Giống chó Poodle từ 6 tháng tuổi trở lên mới được phép sử dụng<span style="color: white;">cnfdvdv</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Khối lượng</td>
+                                                                <td>1.5kg</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Thành phần</td>
+                                                                <td>75% thành phần động vật</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--====== Kết thúc tab chi tiết SP ======-->
+                                        <!--====== Tab đánh giá SP ======-->
+                                        <div class="tab-pane" id="pd-rev">
+                                            <div class="pd-tab__rev">
+                                                <div class="u-s-m-b-30">
+                                                    <div class="pd-tab__rev-score">
+                                                        <div class="u-s-m-b-8">
+                                                            <h2>23 Reviews - 4.6 (Tổng quan)</h2>
+                                                        </div>
+                                                        <div class="gl-rating-style-2 u-s-m-b-8">
+                                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                                        </div>
+                                                        <div class="u-s-m-b-8">
+                                                            <h4>Để lại một đánh giá bạn nhé!</h4>
+                                                        </div>
+
+                                                        <span class="gl-text">
+                                                            Chúng mình luôn cố hết sức để phục vụ các
+                                                            bạn
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="u-s-m-b-30">
+                                                    <form class="pd-tab__rev-f1">
+                                                        <div class="rev-f1__group">
+                                                            <div class="u-s-m-b-15">
+                                                                <h2>Các đánh giá</h2>
+                                                            </div>
+                                                            <div class="u-s-m-b-15">
+
+                                                                <label for="sort-review"></label><select class="select-box select-box--primary-style"
+                                                                                                         id="sort-review">
+                                                                    <option selected>Đánh giá: giảm dần</option>
+                                                                    <option>Đánh giá: tăng dần</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="rev-f1__review">
+                                                            <div class="review-o u-s-m-b-15">
+                                                                <div class="review-o__info u-s-m-b-8">
+
+                                                                    <span class="review-o__name">Kem Ngan</span>
+
+                                                                    <span class="review-o__date">
+                                                                        19:00 Ngày
+                                                                        20/11/2023
+                                                                    </span>
+                                                                </div>
+                                                                <div class="review-o__rating gl-rating-style u-s-m-b-8">
+                                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+
+                                                                    <span>(1)</span>
+                                                                </div>
+                                                                <p class="review-o__text">Tốt, ngon vì toi đã ăn thử</p>
+                                                            </div>
+                                                            <div class="review-o u-s-m-b-15">
+                                                                <div class="review-o__info u-s-m-b-8">
+
+                                                                    <span class="review-o__name">Mei Phun</span>
+
+                                                                    <span class="review-o__date">
+                                                                        23:43 Ngày
+                                                                        2/10/2023
+                                                                    </span>
+                                                                </div>
+                                                                <div class="review-o__rating gl-rating-style u-s-m-b-8">
+                                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+
+                                                                    <span>(4)</span>
+                                                                </div>
+                                                                <p class="review-o__text">Hỏng béc hỏng có nhớ</p>
+                                                            </div>
+                                                            <div class="review-o u-s-m-b-15">
+                                                                <div class="review-o__info u-s-m-b-8">
+
+                                                                    <span class="review-o__name">Thuy Cuynh</span>
+
+                                                                    <span class="review-o__date">
+                                                                        14:33 Ngày
+                                                                        23/9/2023
+                                                                    </span>
+                                                                </div>
+                                                                <div class="review-o__rating gl-rating-style u-s-m-b-8">
+                                                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+
+                                                                    <span>(0)</span>
+                                                                </div>
+                                                                <p class="review-o__text">
+                                                                    Toi mua cho chó nhà toi và nó
+                                                                    đã ăn rất rất rất ngon. Toi nghĩ z còn bạn thì sao
+                                                                </p>
+                                                            </div>
+                                                            <div class="review-o__info u-s-m-b-8">
+
+                                                                <span class="review-o__name">Yen Long</span>
+
+                                                                <span class="review-o__date">14:33 Ngày 2/9/2023</span>
+                                                            </div>
+                                                            <div class="review-o__rating gl-rating-style u-s-m-b-8">
+                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+
+                                                                <span>(2)</span>
+                                                            </div>
+                                                            <p class="review-o__text">
+                                                                Lỡ tay ấn nhầm thành mua 10 bọc
+                                                                rồi ai có nhu cầu liên hệ mình pass nghe
+                                                            </p>
+                                                        </div>
+                                                </div>
+                                                </form>
+                                            </div>
+                                            <div class="u-s-m-b-30">
+                                                <form class="pd-tab__rev-f2">
+                                                    <h2 class="u-s-m-b-15">Thêm đánh giá</h2>
+
+                                                    <span class="gl-text u-s-m-b-15">
+                                                        Email sẽ được ẩn danh nên bạn yên
+                                                        tâm nhé.
+                                                    </span>
+                                                    <div class="u-s-m-b-30">
+                                                        <div class="rev-f2__table-wrap gl-scroll">
+                                                            <!--Thêm bảng đánh giá số sao-->
+                                                            <!--Thêm bảng đánh giá số sao-->
+                                                            <table class="rev-f2__table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2">
+                                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                                                                <span>(5)</span>
+                                                                            </div>
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2">
+                                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                                                                <span>(4.5)</span>
+                                                                            </div>
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2">
+                                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                                                                <span>(4)</span>
+                                                                            </div>
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2">
+                                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                                                                <span>(3.5)</span>
+                                                                            </div>
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2">
+                                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                                                                <span>(3)</span>
+                                                                            </div>
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2">
+                                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                                                                <span>(2.5)</span>
+                                                                            </div>
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2">
+                                                                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                                                                <span>(2)</span>
+                                                                            </div>
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2">
+                                                                                <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                                                                <span>(1.5)</span>
+                                                                            </div>
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2">
+                                                                                <i class="fas fa-star"></i>
+
+                                                                                <span>(1)</span>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <!--Hàng tick chọn sao-->
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-5"
+                                                                                       name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label"
+                                                                                           for="star-5"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-4.5"
+                                                                                       name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label"
+                                                                                           for="star-4.5"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-4"
+                                                                                       name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label"
+                                                                                           for="star-4"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-3.5"
+                                                                                       name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label"
+                                                                                           for="star-3.5"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                        <td>
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-3"
+                                                                                       name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label"
+                                                                                           for="star-3"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-2.5"
+                                                                                       name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label"
+                                                                                           for="star-2.5"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-2"
+                                                                                       name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label"
+                                                                                           for="star-2"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-1.5"
+                                                                                       name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label"
+                                                                                           for="star-1.5"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-1"
+                                                                                       name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label"
+                                                                                           for="star-1"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <!--Kết thúc bảng-->
+                                                        </div>
+                                                    </div>
+                                                    <!--Gửi đánh giá-->
+                                                    <div class="rev-f2__group">
+                                                        <div class="u-s-m-b-15">
+
+                                                            <label class="gl-label" for="reviewer-text">
+                                                                ĐÁNH GIÁ CỦA
+                                                                BẠN
+                                                            </label><textarea class="text-area text-area--primary-style"
+                                                                              id="reviewer-text"></textarea>
+                                                        </div>
+                                                        <div>
+                                                            <p class="u-s-m-b-30">
+
+                                                                <label class="gl-label" for="reviewer-name">TÊN</label>
+
+                                                                <input class="input-text input-text--primary-style"
+                                                                       type="text" id="reviewer-name">
+                                                            </p>
+                                                            <p class="u-s-m-b-30">
+
+                                                                <label class="gl-label"
+                                                                       for="reviewer-email">EMAIL</label>
+
+                                                                <input class="input-text input-text--primary-style"
+                                                                       type="text" id="reviewer-email">
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn btn--e-brand-shadow" type="submit">
+                                                            GỬI ĐÁNH
+                                                            GIÁ
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--====== Kết thúc tab đánh giá ======-->
+                            <!--Bắt đầu cột Top sản phẩm bán chạy-->
+
+                            <div class="col-lg-2 col-md-3 col-sm-6">
+                                <div class="u-s-m-b-15" style="background-color: rgb(250, 244, 238);">
+                                    <h5 style="color:black;padding: 6px;">Sản phẩm bán chạy</h5>
+                                    <!--Bán chạy 1-->
+                                    <div class="product-m">
+                                        <div class="product-m__thumb">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                               href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img"
+                                                     src="https://cdn.discordapp.com/attachments/1174352085177864263/1174395296273412236/399996870_633617078718000_3458912288649802191_n.png?ex=65676fd9&is=6554fad9&hm=77ba48e34185f67bdceda8a51f119fac4ac0ea4b0e2dc34f9a658426eab01412&"
+                                                     alt="thức ăn poodle">
+                                            </a>
+                                            <div class="product-m__content">
+                                                <div class="product-m__name">
+                                                    <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Thức ăn cho chó Poodle MOSHM</a>
+                                                </div>
+                                                <div class="product-m__price">350.000đ</div>
+                                            </div>
+                                            <div class="product-m__hover">
+                                                <div class="product-m__wishlist">
+                                                    <a class="far fa-heart" href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip"
+                                                       data-placement="top" title="Thêm vào yêu thích"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Bán chạy 2-->
+                                    <div class="product-m">
+                                        <div class="product-m__thumb">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                               href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img"
+                                                     src="https://media.discordapp.net/attachments/1174352085177864263/1174399587226755203/400575536_880687549905050_5359492202132871118_n.png?ex=656773d8&is=6554fed8&hm=5d135ed68ba33447f179419be78746dbf1bbefe03820f8c1b1ed26afe4a943e3&=&width=567&height=567"
+                                                     alt="Bát đựng thức ăn đỏ vàng">
+                                            </a>
+
+                                        </div>
+                                        <div class="product-m__content">
+
+                                            <div class="product-m__name">
+                                                <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+                                                    Bát đựng thức ăn nhựa size
+                                                    L
+                                                </a>
+                                            </div>
+
+                                            <div class="product-m__price">50.000đ</div>
+                                            <div class="product-m__hover">
+                                                <div class="product-m__wishlist">
+                                                    <a class="far fa-heart" href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip"
+                                                       data-placement="top" title="Thêm vào yêu thích"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Bán chạy 3-->
+                                    <div class="product-m">
+                                        <div class="product-m__thumb">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                               href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img"
+                                                     src="https://media.discordapp.net/attachments/856338901069070347/1174410480048152627/8bebb0d5cc30f7be44ee2e5d8282d7c4.png?ex=65677dfd&is=655508fd&hm=1b3f25e561817033a22009c82ca2704d35b81c11c8b79081af18e6f6844f036e&=&width=567&height=567"
+                                                     alt="Bát đựng thức ăn đỏ vàng">
+                                            </a>
+                                        </div>
+                                        <div class="product-m__content">
+                                            <div class="product-m__name">
+                                                <a href="@Url.Action("Trang_chi_tiet_san_pham_2", "Home")">
+                                                    Set quần áo Hoàng Thượng - Hoàn
+                                                    Châu
+                                                    Cách Cách
+                                                </a>
+                                            </div>
+                                            <div class="product-m__price">189.000đ</div>
+                                            <div class="product-m__hover">
+                                                <div class="product-m__wishlist">
+                                                    <a class="far fa-heart" href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip"
+                                                       data-placement="top" title="Thêm vào yêu thích"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Bán chạy 4-->
+                                    <div class="product-m">
+                                        <div class="product-m__thumb">
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                               href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+                                                <img class="aspect__img"
+                                                     src="https://media.discordapp.net/attachments/856338901069070347/1174410747518914580/vn-11134207-7r98o-lln2y2a6fqnwda.png?ex=65677e3d&is=6555093d&hm=b0d5fe944760d748c5f16d8c34bd436257a01c84e17c76274800cf08dd7f2008&=&width=575&height=575"
+                                                     alt="Bát đựng thức ăn đỏ vàng">
+                                            </a>
+                                            <div class="product-m__content">
+                                                <div class="product-m__name">
+                                                    <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+                                                        Balo siêu xinh dành cho chó
+                                                        mèo
+                                                    </a>
+                                                </div>
+                                                <div class="product-m__price">245.000đ</div>
+                                                <div class="product-m__hover">
+                                                    <div class="product-m__wishlist">
+                                                        <a class="far fa-heart" href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip"
+                                                           data-placement="top" title="Thêm vào yêu thích"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--xong bán chạy 4-->
+                                    <!--Bán chạy 5-->
+                                    <div class="product-m">
+                                        <div class="product-m__thumb">
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                               href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+                                                <img class="aspect__img"
+                                                     src="https://media.discordapp.net/attachments/856338901069070347/1174418116596465664/dogology-hoa-hong-749.png?ex=6567851a&is=6555101a&hm=ad5ece152835b4eb9c2d07a9c939f732737d0434f653c9483bb8b577ddb7e536&=&width=567&height=567"
+                                                     alt="Sữa tắm chó">
+                                            </a>
+                                        </div>
+                                        <div class="product-m__content">
+                                            <div class="product-m__name">
+                                                <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+                                                    Sữa tắm cho cún khử mùi
+                                                    Dogology
+                                                </a>
+                                            </div>
+                                            <div class="product-m__price">99.000đ</div>
+                                        </div>
+                                        <div class="product-m__hover">
+                                            <div class="product-m__wishlist">
+                                                <a class="far fa-heart" href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip"
+                                                   data-placement="top" title="Thêm vào yêu thích"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Xong bán chạy 5-->
+                                </div>
+                            </div>
+                            <!--Xong sản phẩm bán chạy-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== Kết thúc tab thông tin chi tiết sản phẩm ======-->
+    <div class="u-s-p-b-90">
+
+        <!--====== Giới thiệu sản phẩm khác ======-->
+        <div class="section__intro u-s-m-b-46">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__text-wrap">
+                            <h1 class="section__heading u-c-secondary u-s-m-b-12">SẢN PHẨM GỢI Ý</h1>
+
+                            <span class="section__span u-c-grey">Khách hàng khác cũng xem qua</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== Kết thúc chữ giới thiệu ======-->
+        <!--====== Nội dung sản phẩm giới thiệu ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="slider-fouc">
+                    <div class="owl-carousel product-slider" data-item="4">
+                        <!--Sản phẩm 1-->
+                        <div class="u-s-m-b-30">
+                            <div class="product-o product-o--hover-on">
+                                <div class="product-o__wrap">
+
+                                    <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                       href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                        <img class="aspect__img"
+                                             src="https://media.discordapp.net/attachments/856338901069070347/1174419704325079150/102726027_1333029323568760_565537040925989134_n.png?ex=65678695&is=65551195&hm=37d606e4ab23dbcce31600dffdae1142ea15570e8a327dd397a8c3bcaa9e934f&=&width=851&height=567"
+                                             alt="">
+                                    </a>
+                                    <div class="product-o__action-wrap">
+                                        <ul class="product-o__action-list">
+                                            <li>
+
+                                                <a data-modal="modal" data-modal-id="#add-to-cart"
+                                                   data-tooltip="tooltip" data-placement="top" title="Thêm vào giỏ hàng">
+                                                    <i class="fas fa-plus-circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip" data-placement="top"
+                                                   title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("Trang_dang_nhap", "Home")" data-tooltip="tooltip" data-placement="top"
+                                                   title=" Gửi mail cho tôi khi giảm giá">
+                                                    <i class="fas fa-envelope"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <span class="product-o__category">
+
+                                    <a href="@Url.Action("Trang_san_pham", "Home")">Dinh dưỡng thú cưng</a>
+                                </span>
+
+                                <span class="product-o__name">
+
+                                    <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Cốm dinh dưỡng cho chó mèo</a>
+                                </span>
+                                <div class="product-o__rating gl-rating-style">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                    <span class="product-o__review">(32)</span>
+                                </div>
+
+                                <span class="product-o__price">129.000đ</span>
+                            </div>
+                        </div>
+                        <!--Thông tin SP 2-->
+                        <div class="u-s-m-b-30">
+                            <div class="product-o product-o--hover-on">
+                                <div class="product-o__wrap">
+
+                                    <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                       href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                        <img class="aspect__img"
+                                             src="https://media.discordapp.net/attachments/856338901069070347/1174418116596465664/dogology-hoa-hong-749.png?ex=6567851a&is=6555101a&hm=ad5ece152835b4eb9c2d07a9c939f732737d0434f653c9483bb8b577ddb7e536&=&width=567&height=567"
+                                             alt="">
+                                    </a>
+                                    <div class="product-o__action-wrap">
+                                        <ul class="product-o__action-list">
+
+                                            <li>
+
+                                                <a data-modal="modal" data-modal-id="#add-to-cart"
+                                                   data-tooltip="tooltip" data-placement="top" title="Thêm vào giỏ hàng">
+                                                    <i class="fas fa-plus-circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip" data-placement="top"
+                                                   title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("Trang_dang_nhap", "Home")" data-tooltip="tooltip" data-placement="top"
+                                                   title="Gửi thư tín cho tôi khi giảm giá">
+                                                    <i class="fas fa-envelope"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <span class="product-o__category">
+
+                                    <a href="@Url.Action("Trang_san_pham", "Home")">Chăm sóc thú cưng</a>
+                                </span>
+
+                                <span class="product-o__name">
+
+                                    <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+                                        Sữa tắm cho cún siêu khử mùi
+                                        Dogology
+                                    </a>
+                                </span>
+                                <div class="product-o__rating gl-rating-style">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+
+                                    <span class="product-o__review">(12)</span>
+                                </div>
+
+                                <span class="product-o__price">99.000đ</span>
+                            </div>
+                        </div>
+                        <!--Hết sản phẩm gợi ý-->
+                    </div>
+                </div>
+            </div>
+        </div>
+

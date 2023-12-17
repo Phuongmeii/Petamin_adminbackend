@@ -1,0 +1,147 @@
+﻿
+@{
+    ViewBag.Title = "Trang_Lien_he";
+}
+<!--====== App Content ======-->
+<div class="app-content">
+
+    <!--====== Section 1 ======-->
+    <div class="u-s-p-y-60">
+
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="breadcrumb">
+                    <div class="breadcrumb__wrap">
+                        <ul class="breadcrumb__list">
+                            <li class="has-separator">
+
+                                <a href="@Url.Action("index", "Home")">Trang chủ</a>
+                            </li>
+                            <li class="is-marked">
+
+                                <a href="@Url.Action("Trang_Lien_he", "Home")">Liên hệ </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== End - Section 1 ======-->
+    <!--====== Section 2 ======-->
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6526865456212!2d106.66587187486878!3d10.761227759474219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ee4ecfa255d%3A0x9e5ec3fa6801b7d6!2zMjc5IMSQLiBOZ3V54buFbiBUcmkgUGjGsMahbmcsIFBoxrDhu51uZyA1LCBRdeG6rW4gMTAsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1702502220326!5m2!1svi!2s"
+            width="1500" height="450" style="margin: 0 auto ;border:010; align-items: center;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!--====== End - Section 2 ======-->
+
+    <br>
+    <br>
+
+    <!--====== Section 3 ======-->
+    <div class="u-s-p-b-60">
+
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 u-s-m-b-30">
+                        <div class="contact-o u-h-100">
+                            <div class="contact-o__wrap">
+                                <div class="contact-o__icon"><i class="fas fa-phone-volume"></i></div>
+
+                                <span class="contact-o__info-text-1">Gọi cho chúng tôi</span>
+
+                                <span class="contact-o__info-text-2">(+1) 0123 456 789</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 u-s-m-b-30">
+                        <div class="contact-o u-h-100">
+                            <div class="contact-o__wrap">
+                                <div class="contact-o__icon"><i class="fas fa-map-marker-alt"></i></div>
+
+                                <span class="contact-o__info-text-1">LIÊN HỆ TẠI</span>
+
+                                <span class="contact-o__info-text-2">279 Nguyễn Tri Phương, Phường 5, Quận 10, TP.HCM</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 u-s-m-b-30">
+                        <div class="contact-o u-h-100">
+                            <div class="contact-o__wrap">
+                                <div class="contact-o__icon"><i class="far fa-clock"></i></div>
+
+                                <span class="contact-o__info-text-1">Thời gian làm việc</span>
+
+                                <span class="contact-o__info-text-2">Từ thứ Hai đến thứ Bảy</span>
+
+                                <span class="contact-o__info-text-2">Mở cửa từ 7 giờ sáng đến 9 giờ tối</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Content ======-->
+    </div>
+    <!--====== End - Section 3 ======-->
+    <!--====== Section 4 ======-->
+    <div class="u-s-p-b-60">
+
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="contact-area u-h-100">
+                            <div class="contact-area__heading">
+                                <h2>Bạn cần hỗ trợ</h2>
+                            </div>
+                            <form class="contact-f" method="post" action="index", "Home")">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 u-h-100">
+                                        <div class="u-s-m-b-30">
+
+                                            <label for="Tên"></label>
+
+                                            <input class="input-text input-text--border-radius input-text--primary-style" type="text" id="c-name" placeholder="Nhập tên" required>
+                                        </div>
+                                        <div class="u-s-m-b-30">
+
+                                            <label for="Địa chỉ Email"></label>
+
+                                            <input class="input-text input-text--border-radius input-text--primary-style" type="text" id="c-email" placeholder="Nhập E-mail" required>
+                                        </div>
+                                        <div class="u-s-m-b-30">
+
+                                            <label for="c-subject"></label>
+
+                                            <input class="input-text input-text--border-radius input-text--primary-style" type="text" id="c-subject" placeholder="Nhập tiêu đề" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 u-h-100">
+                                        <div class="u-s-m-b-30">
+
+                                            <label for="c-message"></label><textarea class="text-area text-area--border-radius text-area--primary-style" id="c-message" placeholder="Nhập vấn đề cần hỗ trợ" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+
+                                        <button class="btn btn--e-brand-b-2" type="submit">Gửi yêu cầu</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Content ======-->
+    </div>
+    <!--====== End - Section 4 ======-->
+</div>
+<!--====== End - App Content ======-->

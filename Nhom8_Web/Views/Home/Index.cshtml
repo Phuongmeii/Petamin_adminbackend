@@ -1,0 +1,1735 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<!--====== App Content ======-->
+<div class="app-content">
+
+    <!--====== SLIDER LỚN DƯỚI THANH ĐIỀU HƯỚNG ======-->
+    <div class="s-skeleton s-skeleton--h-600 s-skeleton--bg-grey">
+        <div class="owl-carousel primary-style-1" id="hero-slider">
+            <div class="hero-slide hero-slide--1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="slider-content slider-content--animation">
+
+                                <span class="content-span-1 u-c-secondary"></span>
+
+                                <span class="content-span-2 u-c-secondary"></span>
+
+                                <span class="content-span-3 u-c-secondary"></span>
+
+                                <span class="content-span-4 u-c-secondary">
+
+                                    <span class="u-c-brand"></span>
+                                </span>
+
+                                <a class="shop-now-link-2 btn--e-brand " href="@Url.Action("Trang_dich_vu", "Home")" style="font-size: larger">ĐẶT LỊCH NGAY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide hero-slide--2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="slider-content slider-content--animation">
+
+                                <span class="content-span-1 u-c-white"></span>
+
+                                <span class="content-span-2 u-c-white"></span>
+
+                                <span class="content-span-3 u-c-white"></span>
+
+                                <span class="content-span-4 u-c-white">
+
+                                    <span class="u-c-brand"></span>
+                                </span>
+
+                                <a class="shop-now-link-2 btn--e-brand" href="@Url.Action("Trang_san_pham", "Home")" style="font-size: larger">MUA NGAY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide hero-slide--3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="slider-content slider-content--animation">
+
+                                <span class="content-span-1 u-c-secondary"></span>
+
+                                <span class="content-span-2 u-c-secondary"></span>
+
+                                <span class="content-span-3 u-c-secondary"></span>
+
+                                <span class="content-span-4 u-c-secondary">
+
+                                    <span class="u-c-brand"></span>
+                                </span>
+
+                                <a class="shop-now-link btn--e-brand" href="@Url.Action("Trang_dich_vu", "Home")" style="font-size: larger">ĐẶT LỊCH NGAY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== End - Primary Slider ======-->
+
+    <br>
+    <br>
+
+
+
+    <!--====== SECTION ƯU ĐÃI THU HÚT KHÁCH ======-->
+    <!--====== Section 1 - ƯU ĐÃI TRONG NGÀY ĐỂ MUA======-->
+    <div class="u-s-p-b-60">
+
+        <!--====== Section Intro ======-->
+        <div class="section__intro u-s-m-b-46">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__text-wrap">
+                            <h1 class="section__heading u-c-secondary u-s-m-b-12">ƯU ĐÃI TRONG TUẦN</h1>
+
+                            <span class="section__span u-c-silver">
+                                MUA SẼ ĐƯỢC ƯU ĐÃI TRONG NGÀY, NHANH CHÓNG!
+                                CÁC SẢN PHẨM MỚI NÀY SẼ HẾT HẠN SỚM.
+                            </span>
+
+                            <span class="section__span u-c-silver">HÃY THÊM CHÚNG VÀO GIỎ HÀNG CỦA BẠN.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Intro ======-->
+        <!-- ƯU ĐÃI TRONG NGÀY CHỈNH SỬA Ở ĐÂY
+                    CHỦ YẾU LÀ CHỈNH SỬA data-countdown (chỉnh tới ngày còn muốn giảm giá) -->
+        <!--====== NỘI DUNG SECTION ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 u-s-m-b-30">
+                        <div class="product-o product-o--radius product-o--hover-off u-h-100">
+                            <div class="product-o__wrap">
+
+                                <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                   href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                    <img class="aspect__img"
+                                         src="https://cdn.discordapp.com/attachments/828978839677173801/1173965296135057448/thuc-an-cho-cho-con-co-nho-royal-canin-mini-puppy1-400x400.png?ex=6565df61&is=65536a61&hm=4aa99fc8fe9cc5e8a2ec2f8c0fa03d5a9eb185577911fc5b327772b8c0d2997f&"
+                                         alt="">
+                                </a>
+                                <div class="product-o__special-count-wrap">
+                                    <div class="countdown countdown--style-special" data-countdown="2023/12/24">
+                                    </div>
+                                </div>
+                                <div class="product-o__action-wrap">
+                                    <ul class="product-o__action-list">
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#quick-look"
+                                               data-tooltip="tooltip" data-placement="top" title="Xem trước">
+                                                <i class="fas fa-search-plus"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#add-to-cart"
+                                               data-tooltip="tooltip" data-placement="top"
+                                               title="Thêm vào giỏ hàng"><i class="fas fa-plus-circle"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip" data-placement="top"
+                                               title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a href="@Url.Action("Trang_dang_nhap", "Home")" data-tooltip="tooltip" data-placement="top"
+                                               title="Email tôi khi giảm giá">
+                                                <i class="fas fa-envelope"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <span class="product-o__category">
+
+                                <a href="@Url.Action("Trang_san_pham", "Home")">Dinh dưỡng</a>
+                            </span>
+
+                            <span class="product-o__name">
+
+                                <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Pate thơm ngon, đầy đủ dinh dưỡng cho chó </a>
+                            </span>
+                            <div class="product-o__rating gl-rating-style">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                <span class="product-o__review">(2)</span>
+                            </div>
+
+                            <span class="product-o__price">
+                                35.000 VND
+
+                                <span class="product-o__discount">50.000 VND</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 u-s-m-b-30">
+                        <div class="product-o product-o--radius product-o--hover-off u-h-100">
+                            <div class="product-o__wrap">
+
+                                <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                   href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                    <img class="aspect__img"
+                                         src="https://cdn.discordapp.com/attachments/828978839677173801/1173966167124234301/vn-11134207-7r98o-lndube2r8lpp5e.png?ex=6565e031&is=65536b31&hm=97e250bd8412e25a004b7115142df2f64977685bed4821b9345d0852c74c8853&"
+                                         alt="">
+                                </a>
+                                <div class="product-o__special-count-wrap">
+                                    <div class="countdown countdown--style-special" data-countdown="2023/12/22">
+                                        <!--CHỈNH NGÀY Ở ĐÂY-tg đếm ngược-->
+                                    </div>
+                                </div>
+                                <div class="product-o__action-wrap">
+                                    <ul class="product-o__action-list">
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#quick-look"
+                                               data-tooltip="tooltip" data-placement="top" title="Xem trước">
+                                                <i class="fas fa-search-plus"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a data-modal="modal" data-modal-id="#add-to-cart"
+                                               data-tooltip="tooltip" data-placement="top"
+                                               title="Thêm vào giỏ hàng"><i class="fas fa-plus-circle"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip" data-placement="top"
+                                               title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a href="@Url.Action("Trang_dang_nhap", "Home")" data-tooltip="tooltip" data-placement="top"
+                                               title="Email tôi khi giảm giá">
+                                                <i class="fas fa-envelope"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- far :Không hiện sao
+                                        fas: hiện sao
+                                        -haft-star: nửa sao -->
+                            <span class="product-o__category">
+
+                                <a href="@Url.Action("Trang_san_pham", "Home")">Phụ kiện</a>
+                            </span>
+
+                            <span class="product-o__name">
+
+                                <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Nón gà cho mèo</a>
+                            </span>
+                            <div class="product-o__rating gl-rating-style">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                <span class="product-o__review">(3)</span>
+                            </div>
+
+                            <span class="product-o__price">
+                                50.000 VND
+
+                                <span class="product-o__discount">75.000 VND</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Content ======-->
+    </div>
+    <!--====== End - Section 1======-->
+    <!--====== SECTION SẢN PHẨM BÁN CHẠY ======-->
+    <!--====== Section 2 ======-->
+    <div class="u-s-p-b-60">
+
+        <!--====== pHẦN GIỚI THIỆU======-->
+        <div class="section__intro u-s-m-b-16">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__text-wrap">
+                            <h1 class="section__heading u-c-secondary u-s-m-b-12">SẢN PHẨM BÁN CHẠY</h1>
+
+                            <span class="section__span u-c-silver">NHỮNG SẢN PHẨM ƯA CHUỘNG HÀNG ĐẦU</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Intro ======-->
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="filter-category-container">
+                            <div class="filter__category-wrapper">
+
+                                <button class="btn filter__btn filter__btn--style-1 js-checked" type="button"
+                                        data-filter="*">
+                                    TẤT CẢ
+                                </button>
+                            </div>
+                            <div class="filter__category-wrapper">
+
+                                <button class="btn filter__btn filter__btn--style-1" type="button"
+                                        data-filter=".headphone">
+                                    DINH DƯỠNG
+                                </button>
+                            </div>
+                            <div class="filter__category-wrapper">
+
+                                <button class="btn filter__btn filter__btn--style-1" type="button"
+                                        data-filter=".smartphone">
+                                    ĐỒ DÙNG
+                                </button>
+                            </div>
+                            <div class="filter__category-wrapper">
+
+                                <button class="btn filter__btn filter__btn--style-1" type="button"
+                                        data-filter=".sportgadget">
+                                    PHỤ KIỆN
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="filter__grid-wrapper u-s-m-t-30">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 u-s-m-b-30 filter__item headphone">
+                                    <div class="product-o product-o--hover-on product-o--radius">
+                                        <div class="product-o__wrap">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                               href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img"
+                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1174002192336830545/pate-cho-cho-vi-thit-bo-iris-one-care-beef100g-400x400.png?ex=656601be&is=65538cbe&hm=f6440617abd5aa55d2a2a3494e49458837ba7681c6622eb45b5fbd5f99476c1a&"
+                                                     alt="">
+                                            </a>
+                                            <div class="product-o__action-wrap">
+                                                <ul class="product-o__action-list">
+                                                    <li>
+
+                                                        <a data-modal="modal" data-modal-id="#quick-look"
+                                                           data-tooltip="tooltip" data-placement="top"
+                                                           title="Xem trước">
+                                                            <i class="fas fa-search-plus"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a data-modal="modal" data-modal-id="#add-to-cart"
+                                                           data-tooltip="tooltip" data-placement="top"
+                                                           title="Thêm vào giỏ hàng">
+                                                            <i class="fas fa-plus-circle"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip"
+                                                           data-placement="top" title="Thêm vào yêu thích">
+                                                            <i class="fas fa-heart"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="@Url.Action("Trang_dang_nhap", "Home")" data-tooltip="tooltip"
+                                                           data-placement="top"
+                                                           title="Email tôi khi giảm giá">
+                                                            <i class="fas fa-envelope"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <span class="product-o__category">
+
+                                            <a href="@Url.Action("Trang_san_pham", "Home")">Dinh dưỡng</a>
+                                        </span>
+
+                                        <span class="product-o__name">
+
+                                            <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+                                                Pate cho chó vị thịt bò IRIS OHYAMA
+                                                One Care Beef
+                                            </a>
+                                        </span>
+                                        <div class="product-o__rating gl-rating-style">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                            <span class="product-o__review">(304)</span>
+                                        </div>
+
+                                        <span class="product-o__price">
+                                            35.000 VND
+
+                                            <span class="product-o__discount">50.000 VND</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 u-s-m-b-30 filter__item headphone">
+                                    <div class="product-o product-o--hover-on product-o--radius">
+                                        <div class="product-o__wrap">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                               href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img"
+                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1174002306820354058/pate-cho-meo-vi-ca-ngu-nguyen-chat-cat-sea-fish-pure-tuna-meat-400x400.png?ex=656601d9&is=65538cd9&hm=c963c3795c9f7eb93e746cd0ef594d4634df2e78eda95a53426a05ab54397108&"
+                                                     alt="">
+                                            </a>
+                                            <div class="product-o__action-wrap">
+                                                <ul class="product-o__action-list">
+                                                    <li>
+
+                                                        <a data-modal="modal" data-modal-id="#quick-look"
+                                                           data-tooltip="tooltip" data-placement="top"
+                                                           title="Xem trước">
+                                                            <i class="fas fa-search-plus"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a data-modal="modal" data-modal-id="#add-to-cart"
+                                                           data-tooltip="tooltip" data-placement="top"
+                                                           title="Thêm vào giỏ hàng">
+                                                            <i class="fas fa-plus-circle"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip"
+                                                           data-placement="top" title="Thêm vào yêu thích">
+                                                            <i class="fas fa-heart"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="@Url.Action("Trang_dang_nhap", "Home")" data-tooltip="tooltip"
+                                                           data-placement="top"
+                                                           title="Email tôi khi giảm giá">
+                                                            <i class="fas fa-envelope"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <span class="product-o__category">
+
+                                            <a href="@Url.Action("Trang_san_pham", "Home")">Dinh Dưỡng</a>
+                                        </span>
+
+                                        <span class="product-o__name">
+
+                                            <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+                                                Pate cho mèo vị cá ngừ nguyên chất
+                                                Pure Tuna Meat
+                                            </a>
+                                        </span>
+                                        <div class="product-o__rating gl-rating-style">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+
+                                            <span class="product-o__review">(119)</span>
+                                        </div>
+
+                                        <span class="product-o__price">
+                                            30.000 VND
+
+                                            <span class="product-o__discount">50.000 VND</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 u-s-m-b-30 filter__item sportgadget">
+                                    <div class="product-o product-o--hover-on product-o--radius">
+                                        <div class="product-o__wrap">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                               href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img"
+                                                     src="https://media.discordapp.net/attachments/828978839677173801/1173966167124234301/vn-11134207-7r98o-lndube2r8lpp5e.png?ex=6565e031&is=65536b31&hm=97e250bd8412e25a004b7115142df2f64977685bed4821b9345d0852c74c8853&=&width=529&height=529"
+                                                     alt="">
+                                            </a>
+                                            <div class="product-o__action-wrap">
+                                                <ul class="product-o__action-list">
+                                                    <li>
+
+                                                        <a data-modal="modal" data-modal-id="#quick-look"
+                                                           data-tooltip="tooltip" data-placement="top"
+                                                           title="Xem trước">
+                                                            <i class="fas fa-search-plus"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a data-modal="modal" data-modal-id="#add-to-cart"
+                                                           data-tooltip="tooltip" data-placement="top"
+                                                           title="Thêm vào giỏ hàng">
+                                                            <i class="fas fa-plus-circle"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip"
+                                                           data-placement="top" title="Thêm vào yêu thích">
+                                                            <i class="fas fa-heart"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="@Url.Action("Trang_dang_nhap", "Home")" data-tooltip="tooltip"
+                                                           data-placement="top"
+                                                           title="Email tôi khi giảm giá">
+                                                            <i class="fas fa-envelope"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <span class="product-o__category">
+
+                                            <a href="@Url.Action("Trang_san_pham", "Home")">Phụ kiện</a>
+                                        </span>
+
+                                        <span class="product-o__name">
+
+                                            <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Nón gà cho mèo</a>
+                                        </span>
+                                        <div class="product-o__rating gl-rating-style">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                            <span class="product-o__review">(55)</span>
+                                        </div>
+
+                                        <span class="product-o__price">
+                                            50.000 VND
+
+                                            <span class="product-o__discount">75.000 VND</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 u-s-m-b-30 filter__item sportgadget">
+                                    <div class="product-o product-o--hover-on product-o--radius">
+                                        <div class="product-o__wrap">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                               href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img"
+                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1174006618069942362/0ffe30d94ed23e8d782ceac674f4de4d.png?ex=656605dd&is=655390dd&hm=f69814b425ae5a5ba3d1b8b2070d61082bd3d7fc4d6c28e0a6b7f5c9e69ba9e0&"
+                                                     alt="">
+                                            </a>
+                                            <div class="product-o__action-wrap">
+                                                <ul class="product-o__action-list">
+                                                    <li>
+
+                                                        <a data-modal="modal" data-modal-id="#quick-look"
+                                                           data-tooltip="tooltip" data-placement="top"
+                                                           title="Xem trước">
+                                                            <i class="fas fa-search-plus"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a data-modal="modal" data-modal-id="#add-to-cart"
+                                                           data-tooltip="tooltip" data-placement="top"
+                                                           title="Thêm vào giỏ hàng">
+                                                            <i class="fas fa-plus-circle"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip"
+                                                           data-placement="top" title="Thêm vào yêu thích">
+                                                            <i class="fas fa-heart"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="@Url.Action("Trang_dang_nhap", "Home")" data-tooltip="tooltip"
+                                                           data-placement="top"
+                                                           title="Email tôi khi giảm giá">
+                                                            <i class="fas fa-envelope"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <span class="product-o__category">
+
+                                            <a href="@Url.Action("Trang_san_pham", "Home")">Phụ kiện thú cưng</a>
+                                        </span>
+
+                                        <span class="product-o__name">
+
+                                            <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Tóc giả cho chó mèo</a>
+                                        </span>
+                                        <div class="product-o__rating gl-rating-style">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                            <span class="product-o__review">(233)</span>
+                                        </div>
+
+                                        <span class="product-o__price">
+                                            55.000 VND
+
+                                            <span class="product-o__discount">99.000 VND</span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 u-s-m-b-30 filter__item sportgadget">
+                                    <div class="product-o product-o--hover-on product-o--radius">
+                                        <div class="product-o__wrap">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                               href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img"
+                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1174015512322261133/sg-11134201-7rbmi-ll4g3h23490d4c.png?ex=65660e26&is=65539926&hm=7735132ee033c990d908b146a3197791f457892d64ed653b1067cb3e0c79f1a8&"
+                                                     alt="">
+                                            </a>
+                                            <div class="product-o__action-wrap">
+                                                <ul class="product-o__action-list">
+                                                    <li>
+
+                                                        <a data-modal="modal" data-modal-id="#quick-look"
+                                                           data-tooltip="tooltip" data-placement="top"
+                                                           title="Xem trước">
+                                                            <i class="fas fa-search-plus"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a data-modal="modal" data-modal-id="#add-to-cart"
+                                                           data-tooltip="tooltip" data-placement="top"
+                                                           title="Thêm vào giỏ hàng">
+                                                            <i class="fas fa-plus-circle"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip"
+                                                           data-placement="top" title="Thêm vào yêu thích">
+                                                            <i class="fas fa-heart"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="@Url.Action("Trang_dang_nhap", "Home")" data-tooltip="tooltip"
+                                                           data-placement="top"
+                                                           title="Email tôi khi giảm giá">
+                                                            <i class="fas fa-envelope"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <span class="product-o__category">
+
+                                            <a href="@Url.Action("Trang_san_pham", "Home")">Phụ kiện</a>
+                                        </span>
+
+                                        <span class="product-o__name">
+
+                                            <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Hoodie cho chó mèo</a>
+                                        </span>
+                                        <div class="product-o__rating gl-rating-style">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                            <span class="product-o__review">(99)</span>
+                                        </div>
+
+                                        <span class="product-o__price">
+                                            35.000 VND
+
+                                            <span class="product-o__discount">70.000 VND</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 u-s-m-b-30 filter__item smartphone">
+                                    <div class="product-o product-o--hover-on product-o--radius">
+                                        <div class="product-o__wrap">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                               href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img"
+                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1173994695257493514/e5b165cd40edaae7283eea2b9fa8a9a0.png?ex=6565fac3&is=655385c3&hm=b507f533bd7af03115129d81506d226fe19147c507a5cf1330fdf6f53c1eee16&"
+                                                     alt="">
+                                            </a>
+                                            <div class="product-o__action-wrap">
+                                                <ul class="product-o__action-list">
+                                                    <li>
+
+                                                        <a data-modal="modal" data-modal-id="#quick-look"
+                                                           data-tooltip="tooltip" data-placement="top"
+                                                           title="Xem trước">
+                                                            <i class="fas fa-search-plus"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a data-modal="modal" data-modal-id="#add-to-cart"
+                                                           data-tooltip="tooltip" data-placement="top"
+                                                           title="Thêm vào giỏ hàng">
+                                                            <i class="fas fa-plus-circle"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip"
+                                                           data-placement="top" title="Thêm vào yêu thích">
+                                                            <i class="fas fa-heart"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="@Url.Action("Trang_dang_ky", "Home")" data-tooltip="tooltip"
+                                                           data-placement="top"
+                                                           title="Email tôi khi giảm giá">
+                                                            <i class="fas fa-envelope"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <span class="product-o__category">
+
+                                            <a href="@Url.Action("Trang_san_pham", "Home")">Đồ dùng</a>
+                                        </span>
+
+                                        <span class="product-o__name">
+
+                                            <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Combo 3 cây trêu mèo</a>
+                                        </span>
+                                        <div class="product-o__rating gl-rating-style">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                            <span class="product-o__review">(40)</span>
+                                        </div>
+
+                                        <span class="product-o__price">
+                                            80.000 VND
+
+                                            <span class="product-o__discount">110.000 VND</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 u-s-m-b-30 filter__item smartphone">
+                                    <div class="product-o product-o--hover-on product-o--radius">
+                                        <div class="product-o__wrap">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                               href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img"
+                                                     src="https://media.discordapp.net/attachments/828978839677173801/1173964515294064700/90200896615f5103cda4da7cb1fc0f48.png?ex=6565dea7&is=655369a7&hm=d6b8b9cd394c08c666d774b67596aeb20f000e5f1aa78011487c6b7e7ac5c344&=&width=529&height=529"
+                                                     alt="">
+                                            </a>
+                                            <div class="product-o__action-wrap">
+                                                <ul class="product-o__action-list">
+                                                    <li>
+
+                                                        <a data-modal="modal" data-modal-id="#quick-look"
+                                                           data-tooltip="tooltip" data-placement="top"
+                                                           title="Xem trước">
+                                                            <i class="fas fa-search-plus"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a data-modal="modal" data-modal-id="#add-to-cart"
+                                                           data-tooltip="tooltip" data-placement="top"
+                                                           title="Thêm vào giỏ hàng">
+                                                            <i class="fas fa-plus-circle"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip"
+                                                           data-placement="top" title="Thêm vào yêu thích">
+                                                            <i class="fas fa-heart"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="@Url.Action("Trang_dang_nhap", "Home")" data-tooltip="tooltip"
+                                                           data-placement="top"
+                                                           title="Email tôi khi giảm giá">
+                                                            <i class="fas fa-envelope"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <span class="product-o__category">
+
+                                            <a href="@Url.Action("Trang_san_pham", "Home")">Đồ dùng</a>
+                                        </span>
+
+                                        <span class="product-o__name">
+
+                                            <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Cây trêu mèo xinh</a>
+                                        </span>
+                                        <div class="product-o__rating gl-rating-style">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                            <span class="product-o__review">(70)</span>
+                                        </div>
+
+                                        <span class="product-o__price">
+                                            80.000 VND
+
+                                            <span class="product-o__discount">125.000 VND</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 u-s-m-b-30 filter__item smartphone">
+                                    <div class="product-o product-o--hover-on product-o--radius">
+                                        <div class="product-o__wrap">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                               href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img"
+                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1173995292165685429/vn-11134207-7r98o-llu46il9602n97.png?ex=6565fb51&is=65538651&hm=f26537a932b68e46391732cbeb9be19821629f88e5a754fb85955ebebb10f83c&"
+                                                     alt="">
+                                            </a>
+                                            <div class="product-o__action-wrap">
+                                                <ul class="product-o__action-list">
+                                                    <li>
+
+                                                        <a data-modal="modal" data-modal-id="#quick-look"
+                                                           data-tooltip="tooltip" data-placement="top"
+                                                           title="Xem trước">
+                                                            <i class="fas fa-search-plus"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a data-modal="modal" data-modal-id="#add-to-cart"
+                                                           data-tooltip="tooltip" data-placement="top"
+                                                           title="Thêm vào giỏ hàng">
+                                                            <i class="fas fa-plus-circle"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip"
+                                                           data-placement="top" title="Thêm vào yêu thích">
+                                                            <i class="fas fa-heart"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+
+                                                        <a href="@Url.Action("Trang_dang_nhap", "Home")" data-tooltip="tooltip"
+                                                           data-placement="top"
+                                                           title="Email tôi khi giảm giá">
+                                                            <i class="fas fa-envelope"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <span class="product-o__category">
+
+                                            <a href="@Url.Action("Trang_san_pham", "Home")">Đồ dùng</a>
+                                        </span>
+
+                                        <span class="product-o__name">
+
+                                            <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Cá nhồi catnip cho mèo</a>
+                                        </span>
+                                        <div class="product-o__rating gl-rating-style">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+
+                                            <span class="product-o__review">(23)</span>
+                                        </div>
+
+                                        <span class="product-o__price">
+                                            30.000 VND
+
+                                            <span class="product-o__discount">59.000 VND</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="load-more">
+
+                            <button class="btn btn--e-brand" type="button">
+                                <a style="color:white; font-size: 24px;"
+                                   href="@Url.Action("Trang_san_pham", "Home")">Xem thêm</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Content ======-->
+    </div>
+    <!--====== End - Section 2 ======-->
+    <!--======SECTION DỊCH VỤ ======-->
+    <!--====== Section 3 ======-->
+    <div class="u-s-p-y-60">
+
+        <!--====== Section Intro ======-->
+        <div class="section__intro u-s-m-b-46">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__text-wrap">
+                            <h1 class="section__heading u-c-secondary u-s-m-b-12">DỊCH VỤ</h1>
+
+                            <span class="section__span u-c-silver">DỊCH VỤ PHỔ BIẾN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Intro ======-->
+        <!-- PHẦN DỊCH VỤ -->
+        <div class="section__content">
+            <div class="container">
+                <div class="row">
+
+                    <!--     <div class="aspect aspect--bg-grey aspect--1286-890"> thành  <div class="aspect aspect--bg-grey aspect--square"> (đổi size )    -->
+                    <!-- Chỉnh lại app.css - ctrl+F find:  .collection:hover sửa scale 1.1 -> 1.0 và opacity 1 -> 0.3  (hình phóng to)-->
+                    <!-- Thêm vào app.css .title-service và .collection:hover .title-service-->
+                    <div class="col-lg-4 col-md-4 u-s-m-b-30">
+                        <a class="collection" href="@Url.Action("Trang_dich_vu", "Home")">
+                            <div class="aspect aspect--bg-grey aspect--square">
+                                <img class="aspect__img collection__img"
+                                     src="https://media.discordapp.net/attachments/828978839677173801/1174032794515681351/image_1.jpg?ex=65661e3e&is=6553a93e&hm=607496c3473259c7e088023ec0cbaa0c2210dfe5add9d91bf0166dcb2abf85c4&="
+                                     alt="">
+                            </div>
+                            <h3 class="title-service">Tiêm phòng</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 u-s-m-b-30">
+
+                        <a class="collection" href="@Url.Action("Trang_dich_vu", "Home")">
+                            <div class="aspect aspect--bg-grey aspect--square">
+                                <img class="aspect__img collection__img"
+                                     src="https://media.discordapp.net/attachments/828978839677173801/1174032794243047575/2.jpg?ex=65661e3e&is=6553a93e&hm=3f4487b2d1be0bb51b54c18b61b8af21bd38038b12910df80ee6d6f026f1f89f&="
+                                     alt="">
+                            </div>
+                            <h3 class="title-service">Huấn luyện</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 u-s-m-b-30">
+                        <a class="collection" href="@Url.Action("Trang_dich_vu", "Home")">
+                            <div class="aspect aspect--bg-grey aspect--square">
+                                <img class="aspect__img collection__img"
+                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1174026502476681216/7e3db61d8b406036224fa85dd4033b4a.png?ex=65661862&is=6553a362&hm=8307832de0f85ea536c763889c8abccdf137225fbbd3fb404a62e6cac085e87d&"
+                                     alt="">
+                            </div>
+                            <h3 class="title-service">Cắt/tỉa móng</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 u-s-m-b-30">
+                        <a class="collection" href="@Url.Action("Trang_dich_vu", "Home")">
+                            <div class="aspect aspect--bg-grey aspect--square">
+                                <img class="aspect__img collection__img"
+                                     src="https://media.discordapp.net/attachments/828978839677173801/1174032793949450280/4.jpg?ex=65661e3e&is=6553a93e&hm=04d097860a7c1a26e3571fe669f7380407ff51dc365fa6fd6e2d1ac7afb1229c&="
+                                     alt="">
+                            </div>
+                            <h3 class="title-service">Vệ sinh</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 u-s-m-b-30">
+                        <a class="collection" href="@Url.Action("Trang_dich_vu", "Home")">
+                            <div class="aspect aspect--bg-grey aspect--square">
+                                <img class="aspect__img collection__img"
+                                     src="https://media.discordapp.net/attachments/828978839677173801/1174033498701582356/5.jpg?ex=65661ee6&is=6553a9e6&hm=3149dd202706b39ede93731aed2904999b7e09b408f2fd5707df4e362eb0f04c&="
+                                     alt="">
+                            </div>
+                            <h3 class="title-service">Cắt/tỉa lông</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 u-s-m-b-30">
+                        <a class="collection" href="@Url.Action("Trang_dich_vu", "Home")">
+                            <div class="aspect aspect--bg-grey aspect--square">
+                                <img class="aspect__img collection__img"
+                                     src="https://media.discordapp.net/attachments/828978839677173801/1174033498428932196/6.jpg?ex=65661ee6&is=6553a9e6&hm=3a61024da2317e60c9eda9b01e745654acc3016e3671d99d8280db5e2ef62586&=&width=671&height=671"
+                                     alt="">
+                            </div>
+                            <h3 class="title-service">Khám bệnh</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--====== Section Content ======-->
+    </div>
+    <!--====== End - Section 3 ======-->
+    <!-- ƯU ĐÃI ĐẶC BIỆT -->
+    <!-- Thêm hình ảnh cho ƯU ĐÃI ĐẶC BIỆT:  vào app.css tìm kiếm class .banner-bg -->
+    <!--====== Section 4 ======-->
+    <div class="banner-bg">
+
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="banner-bg__countdown">
+                            <div class="countdown countdown--style-banner" data-countdown="2023/12/25"></div>
+                        </div>
+                        <div class="banner-bg__wrap">
+                            <div class="banner-bg__text-1">
+
+                                <span class="u-c-white">ƯU ĐÃI</span>
+
+                                <span class="u-c-secondary">ĐẶC BIỆT</span>
+                            </div>
+                            <div class="banner-bg__text-2">
+
+                                <span class="u-c-secondary">CHÍNH THỨC</span>
+
+                                <span class="u-c-white">DỪNG BỎ LỠ!</span>
+                            </div>
+
+                            <span class="banner-bg__text-block banner-bg__text-3 u-c-secondary">
+                                Tận hưởng <b style="color: red;">miễn phí</b> 1 phiếu cắt tỉa dành cho thú cưng khi sử dụng bất kì dịch vụ từ PETAMIN!
+                            </span>
+
+                            <a class="banner-bg__shop-now btn--e-secondary" href="@Url.Action("Trang_dich_vu", "Home")" style="font-size: larger;">ĐẶT LỊCH NGAY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Content ======-->
+    </div>
+    <!--====== End - Section 4 ======-->
+    <!-- SECTION SẢN PHẨM MỚI -->
+    <!--====== Section 5 ======-->
+    <div class="u-s-p-b-60">
+
+        <!--====== Section Intro ======-->
+        <br>
+        <div class="section__intro u-s-m-b-46">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__text-wrap">
+                            <h1 class="section__heading u-c-secondary u-s-m-b-12">SẢN PHẨM MỚI</h1>
+
+                            <span class="section__span u-c-silver">
+                                CÙNG PETAMIN ĐÓN NHẬN NHỮNG SẢN PHẨM MỚI
+                                NHÉ!
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Intro ======-->
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="slider-fouc">
+                    <div class="owl-carousel product-slider" data-item="4">
+                        <div class="u-s-m-b-30">
+                            <div class="product-o product-o--hover-on">
+                                <div class="product-o__wrap">
+
+                                    <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                       href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                        <img class="aspect__img"
+                                             src="https://cdn.discordapp.com/attachments/828978839677173801/1174006618069942362/0ffe30d94ed23e8d782ceac674f4de4d.png?ex=656605dd&is=655390dd&hm=f69814b425ae5a5ba3d1b8b2070d61082bd3d7fc4d6c28e0a6b7f5c9e69ba9e0&"
+                                             alt="">
+                                    </a>
+                                    <div class="product-o__action-wrap">
+                                        <ul class="product-o__action-list">
+                                            <li>
+
+                                                <a data-modal="modal" data-modal-id="#quick-look"
+                                                   data-tooltip="tooltip" data-placement="top"
+                                                   title="Xem trước"><i class="fas fa-search-plus"></i></a>
+                                            </li>
+                                            <li>
+
+                                                <a data-modal="modal" data-modal-id="#add-to-cart"
+                                                   data-tooltip="tooltip" data-placement="top"
+                                                   title="Thêm vào giỏ hàng">
+                                                    <i class="fas fa-plus-circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip"
+                                                   data-placement="top" title="Thêm vào yêu thích">
+                                                    <i class="fas fa-heart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("Trang_dang_nhap", "Home")" data-tooltip="tooltip"
+                                                   data-placement="top" title="Email tôi khi giảm giá">
+                                                    <i class="fas fa-envelope"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <span class="product-o__category">
+
+                                    <a href="@Url.Action("Trang_san_pham", "Home")">Phụ kiện</a>
+                                </span>
+
+                                <span class="product-o__name">
+
+                                    <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Tóc giả cho chó mèo</a>
+                                </span>
+                                <div class="product-o__rating gl-rating-style">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                    <span class="product-o__review">(233)</span>
+                                </div>
+
+                                <span class="product-o__price">
+                                    55.000 VND
+
+                                    <span class="product-o__discount">99.000 VND</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="u-s-m-b-30">
+                            <div class="product-o product-o--hover-on">
+                                <div class="product-o__wrap">
+
+                                    <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                       href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                        <img class="aspect__img"
+                                             src="https://cdn.discordapp.com/attachments/828978839677173801/1174015512322261133/sg-11134201-7rbmi-ll4g3h23490d4c.png?ex=65660e26&is=65539926&hm=7735132ee033c990d908b146a3197791f457892d64ed653b1067cb3e0c79f1a8&"
+                                             alt="">
+                                    </a>
+                                    <div class="product-o__action-wrap">
+                                        <ul class="product-o__action-list">
+                                            <li>
+
+                                                <a data-modal="modal" data-modal-id="#quick-look"
+                                                   data-tooltip="tooltip" data-placement="top"
+                                                   title="Xem trước"><i class="fas fa-search-plus"></i></a>
+                                            </li>
+                                            <li>
+
+                                                <a data-modal="modal" data-modal-id="#add-to-cart"
+                                                   data-tooltip="tooltip" data-placement="top"
+                                                   title="Thêm vào giỏ hàng">
+                                                    <i class="fas fa-plus-circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip"
+                                                   data-placement="top" title="Thêm vào yêu thích">
+                                                    <i class="fas fa-heart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("Trang_dang_nhap", "Home")" data-tooltip="tooltip"
+                                                   data-placement="top" title="Email tôi khi giảm giá">
+                                                    <i class="fas fa-envelope"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <span class="product-o__category">
+
+                                    <a href="@Url.Action("Trang_san_pham", "Home")">Phụ kiện</a>
+                                </span>
+
+                                <span class="product-o__name">
+
+                                    <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Hoodie cho chó mèo</a>
+                                </span>
+                                <div class="product-o__rating gl-rating-style">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                    <span class="product-o__review">(99)</span>
+                                </div>
+
+                                <span class="product-o__price">
+                                    35.000 VND
+
+                                    <span class="product-o__discount">70.000 VND</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="u-s-m-b-30">
+                            <div class="product-o product-o--hover-on">
+                                <div class="product-o__wrap">
+
+                                    <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                       href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                        <img class="aspect__img"
+                                             src="https://cdn.discordapp.com/attachments/828978839677173801/1173994695257493514/e5b165cd40edaae7283eea2b9fa8a9a0.png?ex=6565fac3&is=655385c3&hm=b507f533bd7af03115129d81506d226fe19147c507a5cf1330fdf6f53c1eee16&"
+                                             alt="">
+                                    </a>
+                                    <div class="product-o__action-wrap">
+                                        <ul class="product-o__action-list">
+                                            <li>
+
+                                                <a data-modal="modal" data-modal-id="#quick-look"
+                                                   data-tooltip="tooltip" data-placement="top"
+                                                   title="Xem trước"><i class="fas fa-search-plus"></i></a>
+                                            </li>
+                                            <li>
+
+                                                <a data-modal="modal" data-modal-id="#add-to-cart"
+                                                   data-tooltip="tooltip" data-placement="top"
+                                                   title="Thêm vào giỏ hàng">
+                                                    <i class="fas fa-plus-circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip"
+                                                   data-placement="top" title="Thêm vào yêu thích">
+                                                    <i class="fas fa-heart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("Trang_dang_nhap", "Home")" data-tooltip="tooltip"
+                                                   data-placement="top" title="Email tôi khi giảm giá">
+                                                    <i class="fas fa-envelope"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <span class="product-o__category">
+
+                                    <a href="@Url.Action("Trang_san_pham", "Home")">Đồ dùng</a>
+                                </span>
+
+                                <span class="product-o__name">
+
+                                    <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Combo 3 cây trêu mèo</a>
+                                </span>
+                                <div class="product-o__rating gl-rating-style">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                    <span class="product-o__review">(40)</span>
+                                </div>
+
+                                <span class="product-o__price">
+                                    80.000 VND
+
+                                    <span class="product-o__discount">110.000 VND</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="u-s-m-b-30">
+                            <div class="product-o product-o--hover-on">
+                                <div class="product-o__wrap">
+
+                                    <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                       href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                        <img class="aspect__img"
+                                             src="https://media.discordapp.net/attachments/828978839677173801/1173964515294064700/90200896615f5103cda4da7cb1fc0f48.png?ex=6565dea7&is=655369a7&hm=d6b8b9cd394c08c666d774b67596aeb20f000e5f1aa78011487c6b7e7ac5c344&=&width=529&height=529"
+                                             alt="">
+                                    </a>
+                                    <div class="product-o__action-wrap">
+                                        <ul class="product-o__action-list">
+                                            <li>
+
+                                                <a data-modal="modal" data-modal-id="#quick-look"
+                                                   data-tooltip="tooltip" data-placement="top"
+                                                   title="Xem trước"><i class="fas fa-search-plus"></i></a>
+                                            </li>
+                                            <li>
+
+                                                <a data-modal="modal" data-modal-id="#add-to-cart"
+                                                   data-tooltip="tooltip" data-placement="top"
+                                                   title="Thêm vào giỏ hàng">
+                                                    <i class="fas fa-plus-circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip"
+                                                   data-placement="top" title="Thêm vào yêu thích">
+                                                    <i class="fas fa-heart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("Trang_dang_nhap", "Home")" data-tooltip="tooltip"
+                                                   data-placement="top" title="Email tôi khi giảm giá">
+                                                    <i class="fas fa-envelope"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <span class="product-o__category">
+
+                                    <a href="@Url.Action("Trang_san_pham", "Home")">Đồ dùng</a>
+                                </span>
+
+                                <span class="product-o__name">
+
+                                    <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Cây trêu mèo xinh</a>
+                                </span>
+                                <div class="product-o__rating gl-rating-style">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                    <span class="product-o__review">(70)</span>
+                                </div>
+
+                                <span class="product-o__price">
+                                    80.000 VND
+
+                                    <span class="product-o__discount">125.000 VND</span>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== End - Section Content ======-->
+</div>
+<!--====== End - Section 5 ======-->
+
+
+
+<br>
+
+
+<!-- LÝ DO NÊN CHỌN PETAMIN  --- DỰA TRÊN KHUNG GIỐNG PHẦN DỊCH VỤ (CHIA 6 hÌNH) -->
+<!--====== Section 6 ======-->
+<div class="u-s-p-b-60">
+
+    <div class="section__intro u-s-m-b-46">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section__text-wrap">
+                        <h1 class="section__heading u-c-secondary u-s-m-b-12">LÝ DO VÌ SAO NÊN CHỌN PETAMIN</h1>
+
+                        <span class="section__span u-c-silver">
+                            PETAMIN MONG MUỐN ĐEM ĐẾN CHO BẠN TRẢI NGHIỆM TỐT
+                            NHẤT
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section__content">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-4 u-s-m-b-30">
+                    <a class="collection" href="@Url.Action("Trang_gioi_thieu", "Home")">
+                        <div class="aspect aspect--bg-grey aspect--square ">
+                            <img class="aspect__img collection__img2"
+                                 src="https://cdn.discordapp.com/attachments/828978839677173801/1174412582757617837/2Q.png?ex=65677ff3&is=65550af3&hm=596201729f4ec1c132ca7bd450dec0ba430c6a8537ac6aa4cda2b56659eb8bfc&"
+                                 alt="">
+                        </div>
+
+                    </a>
+                    <h3 class="title-service">NGUỒN GỐC RÕ RÀNG</h3>
+                    <p>
+                        Bạn có thể hoàn toàn yên tâm khi mau sản phẩm của chúng tôi. Tất cả sản phẩm đều được
+                        nhập từ nơi uy tín, nguồn gốc xuất xứ rõ ràng.
+                    </p>
+
+                </div>
+                <div class="col-lg-4 col-md-4 u-s-m-b-30">
+
+                    <a class="collection" href="@Url.Action("Trang_gioi_thieu", "Home")">
+                        <div class="aspect aspect--bg-grey aspect--square">
+                            <img class="aspect__img collection__img2"
+                                 src="https://cdn.discordapp.com/attachments/828978839677173801/1174412764991725619/CC3A1ch_cE1BAAFt_mong_cho_chC3B3_-_Dogily_Spa_2.png?ex=6567801e&is=65550b1e&hm=d1a6e82a53329c6b88e08f0d489472ee00ec9263455300ceb1b99ebd36c457a3&"
+                                 alt="">
+                        </div>
+
+                    </a>
+                    <h3 class="title-service">ĐẦY ĐỦ DỊCH VỤ</h3>
+                    <p>
+                        Thú cưng của bạn sẽ được cung cấp đầy đủ dịch vụ từ làm đẹp, sức khỏe và dinh dưỡng.
+                    </p>
+
+                </div>
+                <div class="col-lg-4 col-md-4 u-s-m-b-30">
+                    <a class="collection" href="@Url.Action("Trang_gioi_thieu", "Home")">
+                        <div class="aspect aspect--bg-grey aspect--square">
+                            <img class="aspect__img collection__img2"
+                                 src="https://cdn.discordapp.com/attachments/828978839677173801/1174414687526469695/34334506.png?ex=656781e9&is=65550ce9&hm=d7d077b68ed61821af11b22f77e8576b15cf7472400fc27cabc9b676b635eb6f&"
+                                 alt="">
+                        </div>
+                    </a>
+                    <h3 class="title-service">CHUYÊN MÔN CAO</h3>
+                    <p>Bác thú sỹ và nhân viên spa cắt tỉa lông đều được đào tạo bài bản, chuyên nguyên.</p>
+
+                </div>
+                <div class="col-lg-4 col-md-4 u-s-m-b-30">
+                    <a class="collection" href="@Url.Action("Trang_gioi_thieu", "Home")">
+                        <div class="aspect aspect--bg-grey aspect--square">
+                            <img class="aspect__img collection__img2"
+                                 src="https://cdn.discordapp.com/attachments/828978839677173801/1174413309567574026/1_ryri.png?ex=656780a0&is=65550ba0&hm=d9f39cc44cf59dbc9b37f4e4c25eb0f80b8de69fb2fe3953e94aeea9c63f333e&"
+                                 alt="">
+                        </div>
+                    </a>
+                    <h3 class="title-service">YÊU THƯƠNG ĐỘNG VẬT</h3>
+                    <p>
+                        Tất cả nhân viên được tuyển chọn của Petamin đều là những người tận tình và yêu
+                        thương động vật.
+                    </p>
+
+                </div>
+                <div class="col-lg-4 col-md-4 u-s-m-b-30">
+                    <a class="collection" href="@Url.Action("Trang_gioi_thieu", "Home")">
+                        <div class="aspect aspect--bg-grey aspect--square">
+                            <img class="aspect__img collection__img2"
+                                 src="https://cdn.discordapp.com/attachments/828978839677173801/1174413140079956080/hC3ACnh-minh-hE1BB8Da-vector-cE1BBA7a-nhC3A2n-viC3AAn-bC3A1c-sC4A9-thC3BA-y-vE1BB9Bi-C491E1BB99ng-vE1BAADt-dE1BB85-thC6B0C6A1ng-bC3A1c-sC4A9-thC3BA-y-vC3A0-bC3A1c.png?ex=65678078&is=65550b78&hm=03ac13a3c08a6d127eb7d303ba038e92cd68cecd81701bc458618cad2cc6e847&"
+                                 alt="">
+                        </div>
+                    </a>
+                    <h3 class="title-service">LUÔN VUI VẺ THÂN THIỆN</h3>
+                    <p>
+                        Văn hóa "sẵn lòng", tạo nên một môi trường hòa đồng, thân thiện với từng khách hàng
+                        của Petamin.
+                    </p>
+
+                </div>
+                <div class="col-lg-4 col-md-4 u-s-m-b-30">
+                    <a class="collection" href="@Url.Action("Trang_gioi_thieu", "Home")">
+                        <div class="aspect aspect--bg-grey aspect--square">
+                            <img class="aspect__img collection__img2"
+                                 src="https://cdn.discordapp.com/attachments/828978839677173801/1174414310710194216/2bf8615c4eccc02aab61c0b5331bbb64.png?ex=6567818f&is=65550c8f&hm=6e2ec24836e9c41b287d0d802ba9df15b66a575ad465370cb451d7facdf14a90&"
+                                 alt="">
+                        </div>
+                    </a>
+                    <h3 class="title-service">BẢO HÀNH 1 ĐỔI 1</h3>
+                    <p>
+                        Đối với các sản phẩm mua từ trang web, chúng tôi hỗ trợ 1 đổi 1 trong vòng 48h đối
+                        với các sản phẩm bị hư hỏng, lỗi từ phía chúng tôi.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--====== End - Section 6 ======-->
+<!--====== Section 7 CÁC CHÍNH SÁCH ======-->
+<div class="u-s-p-b-60">
+
+
+
+    <div class="section__intro u-s-m-b-46">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section__text-wrap">
+                        <h1 class="section__heading u-c-secondary u-s-m-b-12">CHÍNH SÁCH CỦA PETAMIN</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== Section Content ======-->
+    <div class="section__content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 u-s-m-b-30">
+                    <div class="service u-h-100">
+                        <div class="service__icon"><i class="fas fa-truck"></i></div>
+                        <div class="service__info-wrap">
+
+                            <span class="service__info-text-1">Miễn phí vận chuyển</span>
+
+                            <span class="service__info-text-2">
+                                Miễn phí vận chuyển cho tất cả các đơn hàng tại
+                                Việt Nam hoặc đơn hàng trên 150.000 VND hoặc có 3 đơn hàng khác nhau trở
+                                lên
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 u-s-m-b-30">
+                    <div class="service u-h-100">
+                        <div class="service__icon"><i class="fas fa-redo"></i></div>
+                        <div class="service__info-wrap">
+
+                            <span class="service__info-text-1">Mua sắm với sự an toàn</span>
+
+                            <span class="service__info-text-2">
+                                Chúng tôi bảo vệ quyền lợi của bạn từ khi nhấp
+                                chuột đến khi đơn hàng được xác minh đầy đủ. <br> Mua 1 đổi 1 trong 48h.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 u-s-m-b-30">
+                    <div class="service u-h-100">
+                        <div class="service__icon"><i class="fas fa-headphones-alt"></i></div>
+                        <div class="service__info-wrap">
+
+                            <span class="service__info-text-1">24/7 Trung tâm trợ giúp</span>
+
+                            <span class="service__info-text-2">
+                                Hỗ trợ suốt ngày đêm để bạn có trải nghiệm mua
+                                sắm suôn sẻ
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== End - Section Content ======-->
+</div>
+<!--====== End - Section 7 ======-->
+<!--====== Section 8 FEEDBACK KHÁCH HÀNG ======-->
+<div class="u-s-p-b-90 u-s-m-b-30">
+
+    <!--====== Section Intro ======-->
+    <div class="section__intro u-s-m-b-46">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section__text-wrap">
+                        <h1 class="section__heading u-c-secondary u-s-m-b-12">PHẢN HỒI CỦA KHÁCH HÀNG</h1>
+
+                        <span class="section__span u-c-silver">KHÁCH HÀNG NÓI GÌ VỀ PETAMIN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== End - Section Intro ======-->
+    <!--====== Section Content ======-->
+    <div class="section__content">
+        <div class="container">
+
+            <!--====== Testimonial Slider ======-->
+            <div class="slider-fouc">
+                <div class="owl-carousel" id="testimonial-slider">
+                    <!-- sử dụng thư viện Owl Carousel để tạo slider
+                    owl-carousel là lớp để kích thước và cấu hình slider sử dụng thư viện Owl Carousel.-->
+                    <!-- lời nhận xét -->
+                    <div class="testimonial">
+                        <div class="testimonial__img-wrap">
+
+                            <img class="testimonial__img" src="https://media.discordapp.net/attachments/1174353151026004142/1174413740012208189/366675761_1653221198512751_812615243043535662_n.jpg?ex=65678107&is=65550c07&hm=8c7f20dccd4241ef03bd7397ea037097898efd53aef33760c85052b1a6740f89&=&width=649&height=655" alt="">
+                        </div>
+                        <div class="testimonial__content-wrap">
+
+                            <span class="testimonial__double-quote"><i class="fas fa-quote-right"></i></span>
+                            <blockquote class="testimonial__block-quote">
+                                <p>"Sản phẩm của PETAMIN chất lượng cực kỳ, lần nào mua về bé chó nhà em rất thích. Nhất định sẽ mua lại nhiều lần"</p>
+                            </blockquote>
+
+                            <span class="testimonial__author">Ms Ngân</span>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial__img-wrap">
+
+                            <img class="testimonial__img" src="https://media.discordapp.net/attachments/1174353151026004142/1174412837540593724/z4639983946523_6f6ca7803207849348ff34799fd683ce.jpg?ex=65678030&is=65550b30&hm=49d568b55a1c242d273c8c4fe56b97afc38fdaab969f224f60a22894b8b8d51a&=&width=480&height=655" alt="">
+                        </div>
+                        <div class="testimonial__content-wrap">
+
+                            <span class="testimonial__double-quote"><i class="fas fa-quote-right"></i></span>
+                            <blockquote class="testimonial__block-quote">
+                                <p>"Lần trước có mua mấy đồ chơi cho bé Mèo, về bé thích mê. Cảm ơn shop"</p>
+                            </blockquote>
+
+                            <span class="testimonial__author">Ms Quynh</span>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial__img-wrap">
+
+                            <img class="testimonial__img" src="https://cdn.discordapp.com/attachments/828978839677173801/1174711260252753991/image.png?ex=6568961d&is=6556211d&hm=24b2b6d87e137723c5e8cb074996734f8050ab681925d5bf85b514c28642e68b&" alt="">
+                        </div>
+                        <div class="testimonial__content-wrap">
+
+                            <span class="testimonial__double-quote"><i class="fas fa-quote-right"></i></span>
+                            <blockquote class="testimonial__block-quote">
+                                <p>"Bé chó dùng xong siêu khỏe mạnh luôn. Nhất định sẽ quay lại "</p>
+                            </blockquote>
+
+                            <span class="testimonial__author">Ms Phuong</span>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial__img-wrap">
+
+                            <img class="testimonial__img" src="https://media.discordapp.net/attachments/1174353151026004142/1174413765199024208/325386589_2372312192926661_5477822370041148980_n.jpg?ex=6567810d&is=65550c0d&hm=da3f4f1bf956509fa886c9dd0398ac118dff3737b644ba69a4b2c7a92178f3b2&=&width=436&height=654" alt="">
+                        </div>
+                        <div class="testimonial__content-wrap">
+
+                            <span class="testimonial__double-quote"><i class="fas fa-quote-right"></i></span>
+                            <blockquote class="testimonial__block-quote">
+                                <p>"Nhân viên tư vấn nhiệt tình. Shop 100đ không có nhưng"</p>
+                            </blockquote>
+
+                            <span class="testimonial__author">Ms Yen</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial__img-wrap">
+
+                            <img class="testimonial__img" src="https://media.discordapp.net/attachments/1174353151026004142/1174413853371674664/313432582_1729301460788512_5946771981288955598_n.jpg?ex=65678122&is=65550c22&hm=5ce0b671f52a7579592722ee0a53ac708e16a2a81df60cc56b254015f0d5091a&=&width=655&height=655" alt="">
+                        </div>
+                        <div class="testimonial__content-wrap">
+
+                            <span class="testimonial__double-quote"><i class="fas fa-quote-right"></i></span>
+                            <blockquote class="testimonial__block-quote">
+                                <p>"Đồ ăn ngon lắm shop ơi"</p>
+                            </blockquote>
+
+                            <span class="testimonial__author">Ms Anh.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--====== End - Testimonial Slider ======-->
+        </div>
+    </div>
+    <!--====== End - Section Content ======-->
+</div>
+<!--====== End - Section 8 ======-->
+<!--====== Section LAST ======-->
+<div class="u-s-p-b-60">
+
+    <!--====== Section Intro ======-->
+    <div class="section__intro u-s-m-b-46">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section__text-wrap">
+                        <h1 class="section__heading u-c-secondary u-s-m-b-12">
+                            PETAMIN - VITAMIN FOR YOUR PET
+                        </h1>
+
+                        <span class="section__span u-c-silver">LUÔN SẴN SÀNG HỖ TRỢ BẠN CHĂM SÓC THÚ CƯNG</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== End - Section Intro ======-->
+
+
+
+</div>
+<!--====== End - App Content ======-->
+<!--====== Newsletter Subscribe Modal ---- POPUP ĐĂNG KÝ======-->
+<div class="modal fade new-l" id="newsletter-modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal--shadow">
+
+            <button class="btn new-l__dismiss fas fa-times" type="button" data-dismiss="modal"></button>
+            <div class="modal-body">
+                <div class="row u-s-m-x-0">
+                    <div class="col-lg-6 new-l__col-1 u-s-p-x-0">
+
+                        <a class="new-l__img-wrap u-d-block" href="Trang_san_pham.html">
+
+                            <img class="u-img-fluid u-d-block"
+                                 src="https://cdn.discordapp.com/attachments/828978839677173801/1173922958029361182/ang_nhap.png?ex=6565b7f3&is=655342f3&hm=d5c2e73fa7989ae48f0f5229cad4b0a415095dfcaba1ebaab8cf3e9f056a7003&"
+                                 alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6 new-l__col-2">
+                        <div class="new-l__section u-s-m-t-30">
+                            <div class="u-s-m-b-8 new-l--center">
+                                <h3 class="new-l__h3" style="text-align: center;"><strong>THÔNG BÁO</strong></h3>
+                            </div>
+                            <div class="u-s-m-b-30 new-l--center">
+                                <p class="new-l__p1">
+                                    Đăng ký email để nhận thông tin mới về những sản phẩm, dịch
+                                    vụ mới, chương trình giảm giá đặc biệt và hơn thế nữa
+                                </p>
+                            </div>
+                            <form class="new-l__form">
+                                <div class="u-s-m-b-15">
+
+                                    <input class="news-l__input" type="text" placeholder="Địa chỉ E-mail">
+                                </div>
+                                <div class="u-s-m-b-15">
+
+                                    <button class="btn btn--e-brand-b-2" type="submit">Đăng ký!</button>
+                                </div>
+                            </form>
+                            <div class="u-s-m-b-15 new-l--center">
+                                <p class="new-l__p2">
+                                    Bằng việc Đăng ký, bạn đồng ý nhận ưu đãi của
+                                    PETAMIN,<br />chương trình khuyến mãi và các thông điệp thương mại khác. Bạn
+                                    có thể bỏ đăng kí bất cứ lúc nào.
+                                </p>
+                            </div>
+                            <div class="u-s-m-b-15 new-l--center">
+
+                                <a class="new-l__link" data-dismiss="modal">Không, cảm ơn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--====== End - Newsletter Subscribe Modal ---- POPUP ĐĂNG KÝ======-->

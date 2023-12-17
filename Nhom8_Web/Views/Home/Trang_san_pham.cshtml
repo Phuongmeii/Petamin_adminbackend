@@ -1,0 +1,890 @@
+﻿
+@{
+    ViewBag.Title = "Trang_san_pham";
+}
+<!--====== Nội dung trang sản phẩm ======-->
+<div class="app-content">
+
+    <!--======Tạo Bộ lọc ======-->
+    <div class="u-s-p-y-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <div class="shop-w-master">
+                        <h1 class="shop-w-master__heading u-s-m-b-30">
+                            <i class="fas fa-filter u-s-m-r-8"></i>
+                            <span>BỘ LỌC</span>
+                        </h1>
+                        <div class="shop-w-master__sidebar sidebar--bg-snow">
+                            <!--Tạo bộ lọc phân loại-->
+                            <div class="u-s-m-b-30" style="color: black; font-size: small">
+                                <div class="shop-w">
+                                    <div class="shop-w__intro-wrap">
+                                        <h1 class="shop-w__h">PHÂN LOẠI SẢN PHẨM</h1>
+
+                                        <span class="fas fa-minus shop-w__toggle" data-target="#s-category" data-toggle="collapse"></span>
+                                    </div>
+                                    <div class="shop-w__wrap collapse show" id="s-category">
+                                        <ul class="shop-w__category-list gl-scroll">
+                                            <li class="has-list">
+                                                <!--Chèn checkbox vào bộ lọc-->
+                                                <div class="check-box">
+                                                    <input type="checkbox" id="free-shipping">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="free-shipping">Chăm sóc thú cưng</label>
+                                                    </div>
+                                                </div>
+                                                <!--Hết checkbox-->
+                                                <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                <ul>
+                                                    <li class="has-list">
+                                                        <div class="check-box">
+
+                                                            <input type="checkbox" id="free-shipping">
+                                                            <div class="check-box__state check-box__state--primary">
+
+                                                                <label class="check-box__label" for="free-shipping">Bát đựng thức ăn</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="has-list">
+                                                        <div class="check-box">
+
+                                                            <input type="checkbox" id="free-shipping">
+                                                            <div class="check-box__state check-box__state--primary">
+
+                                                                <label class="check-box__label" for="free-shipping">Đệm nằm</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="has-list">
+                                                        <div class="check-box">
+
+                                                            <input type="checkbox" id="free-shipping">
+                                                            <div class="check-box__state check-box__state--primary">
+
+                                                                <label class="check-box__label" for="free-shipping">Lồng/ Chuồng</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="has-list">
+                                                        <div class="check-box">
+
+                                                            <input type="checkbox" id="free-shipping">
+                                                            <div class="check-box__state check-box__state--primary">
+
+                                                                <label class="check-box__label" for="free-shipping">Balo/Túi</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="has-list">
+                                                        <div class="check-box">
+
+                                                            <input type="checkbox" id="free-shipping">
+                                                            <div class="check-box__state check-box__state--primary">
+
+                                                                <label class="check-box__label" for="free-shipping">Khay vệ sinh/Cát/Xẻng</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="has-list">
+                                                        <div class="check-box">
+
+                                                            <input type="checkbox" id="free-shipping">
+                                                            <div class="check-box__state check-box__state--primary">
+
+                                                                <label class="check-box__label" for="free-shipping">Sữa tắm</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-list">
+
+                                                <div class="check-box">
+
+                                                    <input type="checkbox" id="free-shipping">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="free-shipping">Dinh dưỡng thú cưng</label>
+                                                    </div>
+                                                </div>
+                                                <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                <ul>
+                                                    <li class="has-list">
+                                                        <div class="check-box">
+
+                                                            <input type="checkbox" id="free-shipping">
+                                                            <div class="check-box__state check-box__state--primary">
+
+                                                                <label class="check-box__label" for="free-shipping">thức ăn cho cún</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="has-list">
+                                                        <div class="check-box">
+
+                                                            <input type="checkbox" id="free-shipping">
+                                                            <div class="check-box__state check-box__state--primary">
+
+                                                                <label class="check-box__label" for="free-shipping">Thức ăn cho mèo</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="has-list">
+                                                        <div class="check-box">
+
+                                                            <input type="checkbox" id="free-shipping">
+                                                            <div class="check-box__state check-box__state--primary">
+
+                                                                <label class="check-box__label" for="free-shipping">Bổ sung dinh dưỡng</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-list">
+
+                                                <div class="check-box">
+
+                                                    <input type="checkbox" id="free-shipping">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="free-shipping">Phụ kiện thú cưng</label>
+                                                    </div>
+                                                </div>
+                                                <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                <ul>
+                                                    <li class="has-list">
+                                                        <div class="check-box">
+
+                                                            <input type="checkbox" id="free-shipping">
+                                                            <div class="check-box__state check-box__state--primary">
+
+                                                                <label class="check-box__label" for="free-shipping">Quần áo, mũ, nón</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="has-list">
+                                                        <div class="check-box">
+
+                                                            <input type="checkbox" id="free-shipping">
+                                                            <div class="check-box__state check-box__state--primary">
+
+                                                                <label class="check-box__label" for="free-shipping">Vòng cổ/Vòng bảo vệ</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="has-list">
+                                                        <div class="check-box">
+
+                                                            <input type="checkbox" id="free-shipping">
+                                                            <div class="check-box__state check-box__state--primary">
+
+                                                                <label class="check-box__label" for="free-shipping">Dây dắt</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="has-list">
+                                                        <div class="check-box">
+
+                                                            <input type="checkbox" id="free-shipping">
+                                                            <div class="check-box__state check-box__state--primary">
+
+                                                                <label class="check-box__label" for="free-shipping">Khác...</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Bộ lọc đánh giá-->
+                            <div class="u-s-m-b-30">
+                                <div class="shop-w">
+                                    <div class="shop-w__intro-wrap">
+                                        <h1 class="shop-w__h">ĐÁNH GIÁ</h1>
+
+                                        <span class="fas fa-minus shop-w__toggle" data-target="#s-rating" data-toggle="collapse"></span>
+                                    </div>
+                                    <div class="shop-w__wrap collapse show" id="s-rating">
+                                        <ul class="shop-w__list gl-scroll">
+                                            <li>
+                                                <div class="check-box">
+                                                    <input type="checkbox" id="free-shipping" checked>
+                                                    <div class="check-box__state check-box__state--primary">
+                                                        <label class="check-box__label" for="free-shipping">
+                                                            <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <span class="shop-w__total-text">(8)</span>
+                                            </li>
+                                            <li>
+                                                <div class="check-box">
+                                                    <input type="checkbox" id="free-shipping" checked>
+                                                    <div class="check-box__state check-box__state--primary">
+                                                        <label class="check-box__label" for="free-shipping">
+                                                            <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                                                        </label>
+                                                        <span style="font-size: 12px; color: black;">Trở lên</span>
+                                                    </div>
+                                                </div>
+                                                <span class="shop-w__total-text">(10)</span>
+                                            </li>
+                                            <li>
+                                                <div class="check-box">
+                                                    <input type="checkbox" id="free-shipping" checked>
+                                                    <div class="check-box__state check-box__state--primary">
+                                                        <label class="check-box__label" for="free-shipping">
+                                                            <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                                                        </label>
+                                                        <span style="font-size: 12px; color: black;">Trở lên</span>
+                                                    </div>
+                                                </div>
+                                                <span class="shop-w__total-text">(5)</span>
+                                            </li>
+                                            <li>
+                                                <div class="check-box">
+                                                    <input type="checkbox" id="free-shipping" checked>
+                                                    <div class="check-box__state check-box__state--primary">
+                                                        <label class="check-box__label" for="free-shipping">
+                                                            <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                                                        </label>
+                                                        <span style="font-size: 12px; color: black;">Trở lên</span>
+                                                    </div>
+                                                </div>
+                                                <span class="shop-w__total-text">(3)</span>
+                                            </li>
+                                            <li>
+                                                <div class="check-box">
+                                                    <input type="checkbox" id="free-shipping" checked>
+                                                    <div class="check-box__state check-box__state--primary">
+                                                        <label class="check-box__label" for="free-shipping">
+                                                            <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                                                        </label>
+                                                        <span style="font-size: 12px; color: black;">Trở lên</span>
+                                                    </div>
+                                                </div>
+                                                <span class="shop-w__total-text">(3)</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Bộ lọc đối tượng Thú cưng-->
+                            <div class="u-s-m-b-30">
+                                <div class="shop-w">
+                                    <div class="shop-w__intro-wrap">
+                                        <h1 class="shop-w__h">THÚ CƯNG</h1>
+
+                                        <span class="fas fa-minus shop-w__toggle" data-target="#s-object" data-toggle="collapse"></span>
+                                    </div>
+                                    <div class="shop-w__wrap collapse show" id="s-object">
+                                        <ul class="shop-w__list gl-scroll">
+                                            <li>
+                                                <div class="check-box">
+
+                                                    <input type="checkbox" id="object-meo">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="object-meo">Mèo</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="check-box">
+
+                                                    <input type="checkbox" id="object-chó">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="object-cho">Cún</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Bộ lọc shipping-->
+                            <div class="u-s-m-b-30">
+                                <div class="shop-w">
+                                    <div class="shop-w__intro-wrap">
+                                        <h1 class="shop-w__h">SHIPPING</h1>
+
+                                        <span class="fas fa-minus shop-w__toggle" data-target="#s-shipping" data-toggle="collapse"></span>
+                                    </div>
+                                    <div class="shop-w__wrap collapse show" id="s-shipping">
+                                        <ul class="shop-w__list gl-scroll">
+                                            <li>
+                                                <div class="check-box">
+
+                                                    <input type="checkbox" id="free-shipping">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="free-shipping">Miễn phí ship</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Tạo bộ lọc giá tiền-->
+                            <div class="u-s-m-b-30">
+                                <div class="shop-w">
+                                    <div class="shop-w__intro-wrap">
+                                        <h1 class="shop-w__h">GIÁ TIỀN</h1>
+
+                                        <span class="fas fa-minus shop-w__toggle" data-target="#s-price" data-toggle="collapse"></span>
+                                    </div>
+                                    <div class="shop-w__wrap collapse show" id="s-price">
+                                        <form class="shop-w__form-p">
+                                            <div class="shop-w__form-p-wrap">
+                                                <div>
+
+                                                    <label for="price-min"></label>
+
+                                                    <input class="input-text input-text--primary-style" type="text" id="price-min" placeholder="Thấp nhất">
+                                                </div>
+                                                <div>
+
+                                                    <label for="price-max"></label>
+
+                                                    <input class="input-text input-text--primary-style" type="text" id="price-max" placeholder="Cao nhất">
+                                                </div>
+                                                <div>
+
+                                                    <button class="btn btn--icon fas fa-angle-right btn--e-transparent-platinum-b-2" type="submit"></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Kết thúc bộ lọc giá tiền-->
+                            <!--Tạo nút tìm kiếm-->
+                            <div class="u-s-m-b-15">
+                                <a class="btn--e-brand" data-modal="modal"
+                                   style="padding:12px; border-radius: 5px; display: flex; justify-content: center; align-items: center;">TÌM KIẾM</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12">
+                    <div class="shop-p">
+                        <!--Hiển thị kết quả tìm kiếm-->
+                        <div class="shop-p__toolbar u-s-m-b-30">
+                            <div class="shop-p__meta-wrap u-s-m-b-60">
+
+                                <span class="shop-p__meta-text-1">TÌM THẤY 69 KẾT QUẢ</span>
+                                <div class="shop-p__meta-text-2">
+
+                                    <span>Các kết quả liên quan:</span>
+
+                                    <a class="gl-tag btn--e-brand-shadow" href="@Url.Action("Trang_san_pham", "Home")">Bát đựng thức ăn</a>
+
+                                    <a class="gl-tag btn--e-brand-shadow" href="@Url.Action("Trang_san_pham", "Home")">Chăm sóc thú cưng</a>
+
+                                    <a class="gl-tag btn--e-brand-shadow" href="@Url.Action("Trang_san_pham", "Home")">Sữa tắm</a>
+                                </div>
+                            </div>
+                            <div class="shop-p__tool-style">
+                                <div class="tool-style__group u-s-m-b-8">
+
+                                    <span class="js-shop-grid-target is-active">Xem lưới</span>
+
+                                    <span class="js-shop-list-target">Xem danh sách</span>
+                                </div>
+                                <form>
+                                    <div class="tool-style__form-wrap">
+                                        <div class="u-s-m-b-8">
+                                            <select class="select-box select-box--transparent-b-2">
+                                                <option>Hiển thị: 8 SP</option>
+                                                <option selected>Hiển thị: 12 SP</option>
+                                                <option>Hiển thị: 16 SP</option>
+                                                <option>Hiển thị: 20 SP</option>
+                                            </select>
+                                        </div>
+                                        <div class="u-s-m-b-8">
+                                            <select class="select-box select-box--transparent-b-2">
+                                                <option selected>Sắp xếp: Mới nhất</option>
+                                                <option>Sắp xếp: Cũ nhất</option>
+                                                <option>Sắp xếp: Bán chạy nhất</option>
+                                                <option>Sắp xếp: Giá giảm dần</option>
+                                                <option>Sắp xếp: Giá tăng dần</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--Hiển thị sản phẩm shop-->
+                        <div class="shop-p__collection">
+                            <div class="row is-grid-active">
+                                <!--thông tin  ô sản phẩm 1-->
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="product-m">
+                                        <div class="product-m__thumb">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img" src="https://cdn.discordapp.com/attachments/1174352085177864263/1174395296273412236/399996870_633617078718000_3458912288649802191_n.png?ex=65676fd9&is=6554fad9&hm=77ba48e34185f67bdceda8a51f119fac4ac0ea4b0e2dc34f9a658426eab01412&" alt="thức ăn poodle">
+                                            </a>
+                                            <div class="product-m__quick-look">
+
+                                                <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                            </div>
+                                            <div class="product-m__add-cart">
+
+                                                <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ</a>
+                                            </div>
+                                        </div>
+                                        <div class="product-m__content">
+                                            <div class="product-m__category">
+
+                                                <a href="@Url.Action("Trang_san_pham", "Home")">Dinh dưỡng thú cưng</a>
+                                            </div>
+                                            <div class="product-m__name">
+
+                                                <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Thức ăn cho chó Poodle MOSHM</a>
+                                            </div>
+                                            <div class="product-m__rating gl-rating-style">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+
+                                                <span class="product-m__review">(23)</span>
+                                            </div>
+                                            <div class="product-m__price">350.000đ</div>
+                                            <div class="product-m__hover">
+                                                <div class="product-m__preview-description">
+                                                    <span>Thức ăn cho chó Poodle MOSHM được chế biến từ 7 loại thịt và 5 loại cá. Thành phần hoàn toàn từ thiên nhiên, đảm bảo cho sức khỏe của cún cưng. Dinh dưỡng cân bằng cung cấp đủ cho nhu cầu của chó Poodle ở mọi độ tuổi. </span>
+                                                </div>
+                                                <div class="product-m__wishlist">
+                                                    <a class="far fa-heart" href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip" data-placement="top" title="Yêu thích"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Thông tin ô sản phẩm 2-->
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="product-m">
+                                        <div class="product-m__thumb">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img" src="https://media.discordapp.net/attachments/1174352085177864263/1174399587226755203/400575536_880687549905050_5359492202132871118_n.png?ex=656773d8&is=6554fed8&hm=5d135ed68ba33447f179419be78746dbf1bbefe03820f8c1b1ed26afe4a943e3&=&width=567&height=567" alt="Bát đựng thức ăn đỏ vàng">
+                                            </a>
+                                            <div class="product-m__quick-look">
+
+                                                <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                            </div>
+                                            <div class="product-m__add-cart">
+
+                                                <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ</a>
+                                            </div>
+                                        </div>
+                                        <div class="product-m__content">
+                                            <div class="product-m__category">
+
+                                                <a href="@Url.Action("Trang_san_pham", "Home")">Chăm sóc thú cưng</a>
+                                            </div>
+                                            <div class="product-m__name">
+
+                                                <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Bát đựng thức ăn nhựa size L</a>
+                                            </div>
+                                            <div class="product-m__rating gl-rating-style">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></i><i class="far fa-star"></i>
+
+                                                <span class="product-m__review">(23)</span>
+                                            </div>
+                                            <div class="product-m__price">50.000đ</div>
+                                            <div class="product-m__hover">
+                                                <div class="product-m__preview-description">
+
+                                                    <span>Bát ăn cho chó mèo họa tiết xinh xắn đáng yêu. Bát gồm 2 phần là vỏ ngoài bằng nhựa bền, ruột bát nhựa sáng bóng không hoen rỉ.</span>
+                                                </div>
+                                                <div class="product-m__wishlist">
+
+                                                    <a class="far fa-heart" href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip" data-placement="top" title="Yêu thích"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Thông tin ô sản phẩm 3-->
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="product-m">
+                                        <div class="product-m__thumb">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="@Url.Action("Trang_chi_tiet_san_pham_2", "Home")">
+
+                                                <img class="aspect__img" src="https://media.discordapp.net/attachments/856338901069070347/1174410480048152627/8bebb0d5cc30f7be44ee2e5d8282d7c4.png?ex=65677dfd&is=655508fd&hm=1b3f25e561817033a22009c82ca2704d35b81c11c8b79081af18e6f6844f036e&=&width=567&height=567" alt="quần áo hoàng thượng">
+                                            </a>
+                                            <div class="product-m__quick-look">
+
+                                                <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                            </div>
+                                            <div class="product-m__add-cart">
+
+                                                <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ</a>
+                                            </div>
+                                        </div>
+                                        <div class="product-m__content">
+                                            <div class="product-m__category">
+
+                                                <a href="@Url.Action("Trang_san_pham", "Home")">Phụ kiện thú cưng</a>
+                                            </div>
+                                            <div class="product-m__name">
+
+                                                <a href="@Url.Action("Trang_chi_tiet_san_pham_2", "Home")">Set quần áo Hoàng Thượng - Hoàn Châu Cách Cách</a>
+                                            </div>
+                                            <div class="product-m__rating gl-rating-style">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="far fa-star"></i>
+
+                                                <span class="product-m__review">(57)</span>
+                                            </div>
+                                            <div class="product-m__price">189.000đ</div>
+                                            <div class="product-m__hover">
+                                                <div class="product-m__preview-description">
+
+                                                    <span>Set quần áo Hoàng Thượng - Hoàng Châu Cách Cách dành cho chó mèo . Với nhiều người, chó mèo không chỉ là động vật giúp giữ nhà, bắt chuột , mà còn là người bạn nhỏ thân thiết và rất trung thành. Do đó, hãy thể hiện tình yêu thương của bạn dành cho “người bạn nhỏ” đáng yêu này bằng cách trang bị cho chúng một bộ quần áo độc đáo và cá tính nhé. Thích hợp cho mèo dưới 4kg</span>
+                                                </div>
+                                                <div class="product-m__wishlist">
+
+                                                    <a class="far fa-heart" href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip" data-placement="top" title="Yêu thích"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Thông tin ô sản phẩm 4-->
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="product-m">
+                                        <div class="product-m__thumb">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img" src="https://media.discordapp.net/attachments/856338901069070347/1174410747518914580/vn-11134207-7r98o-lln2y2a6fqnwda.png?ex=65677e3d&is=6555093d&hm=b0d5fe944760d748c5f16d8c34bd436257a01c84e17c76274800cf08dd7f2008&=&width=575&height=575" alt="Bát đựng thức ăn đỏ vàng">
+                                            </a>
+                                            <div class="product-m__quick-look">
+
+                                                <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                            </div>
+                                            <div class="product-m__add-cart">
+
+                                                <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ</a>
+                                            </div>
+                                        </div>
+                                        <div class="product-m__content">
+                                            <div class="product-m__category">
+
+                                                <a href="@Url.Action("Trang_san_pham", "Home")">Phụ kiện thú cưng</a>
+                                            </div>
+                                            <div class="product-m__name">
+
+                                                <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Balo siêu xinh dành cho chó mèo </a>
+                                            </div>
+                                            <div class="product-m__rating gl-rating-style">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star"></i>
+
+                                                <span class="product-m__review">(24)</span>
+                                            </div>
+                                            <div class="product-m__price">245.000đ</div>
+                                            <div class="product-m__hover">
+                                                <div class="product-m__preview-description">
+
+                                                    <span>
+                                                        Nếu bạn đang nuôi những bé mèo cỡ vừa và nhỏ hay chó poodle, chihuahua thì sản phẩm này sẽ là một lựa chọn lý tưởng. Ngoài ra, balo địu thú cưng thường được thiết kế từ chất liệu mềm mại và chống bẩn hiệu quả nên bạn cũng có thể dễ dàng vệ sinh.
+
+                                                    </span>
+                                                </div>
+                                                <div class="product-m__wishlist">
+
+                                                    <a class="far fa-heart" href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip" data-placement="top" title="Yêu thích"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Thông tin ô sản phẩm 5-->
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="product-m">
+                                        <div class="product-m__thumb">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img" src="https://media.discordapp.net/attachments/856338901069070347/1174418116596465664/dogology-hoa-hong-749.png?ex=6567851a&is=6555101a&hm=ad5ece152835b4eb9c2d07a9c939f732737d0434f653c9483bb8b577ddb7e536&=&width=567&height=567" alt="Sữa tắm chó">
+                                            </a>
+                                            <div class="product-m__quick-look">
+
+                                                <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                            </div>
+                                            <div class="product-m__add-cart">
+
+                                                <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ</a>
+                                            </div>
+                                        </div>
+                                        <div class="product-m__content">
+                                            <div class="product-m__category">
+
+                                                <a href="@Url.Action("Trang_san_pham", "Home")">Chăm sóc thú cưng</a>
+                                            </div>
+                                            <div class="product-m__name">
+
+                                                <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Sữa tắm cho cún siêu khử mùi Dogology</a>
+                                            </div>
+                                            <div class="product-m__rating gl-rating-style">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="far fa-star"></i>
+
+                                                <span class="product-m__review">(12)</span>
+                                            </div>
+                                            <div class="product-m__price">99.000đ</div>
+                                            <div class="product-m__hover">
+                                                <div class="product-m__preview-description">
+
+                                                    <span>Sữa tắm DOGOLOGY cho chó là một trong những sản phẩm của thương hiệu NEKO nổi tiếng ở Nhật Bản. Các sen có thể tìm mua sữa tắm rất dễ dàng tại các đơn vị, cửa hàng bán đồ cho thú cưng. Theo thống kê trên thị trường tại Nhật Bản, DOGOLOGY có lượng tiêu thụ lớn nhất trong số các sản phẩm sữa tắm cho mèo. Hãy cùng tìm hiểu xem tại sao sản phẩm lại được yêu thích đến vậy và lý do để bạn nên sử dụng sữa tắm DOGOLOGY cho bé nhà mình là gì nhé.</span>
+                                                </div>
+                                                <div class="product-m__wishlist">
+
+                                                    <a class="far fa-heart" href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip" data-placement="top" title="Yêu thích"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Thông tin ô sản phẩm 6-->
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="product-m">
+                                        <div class="product-m__thumb">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img" src="https://media.discordapp.net/attachments/856338901069070347/1174419704325079150/102726027_1333029323568760_565537040925989134_n.png?ex=65678695&is=65551195&hm=37d606e4ab23dbcce31600dffdae1142ea15570e8a327dd397a8c3bcaa9e934f&=&width=851&height=567" alt="Canxi khoáng">
+                                            </a>
+                                            <div class="product-m__quick-look">
+
+                                                <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                            </div>
+                                            <div class="product-m__add-cart">
+
+                                                <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ</a>
+                                            </div>
+                                        </div>
+                                        <div class="product-m__content">
+                                            <div class="product-m__category">
+
+                                                <a href="@Url.Action("Trang_san_pham", "Home")">Dinh dưỡng thú cưng</a>
+                                            </div>
+                                            <div class="product-m__name">
+
+                                                <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Cốm dinh dưỡng cho chó mèo</a>
+                                            </div>
+                                            <div class="product-m__rating gl-rating-style">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star"></i>
+
+                                                <span class="product-m__review">(32)</span>
+                                            </div>
+                                            <div class="product-m__price">129.000đ</div>
+                                            <div class="product-m__hover">
+                                                <div class="product-m__preview-description">
+
+                                                    <span>Cốm dinh dưỡng là một dòng sản phẩm hoàn toàn mới dành cho thú cưng. Cũng giống như con người, ngoài bữa ăn chính hàng ngày, thú cưng cũng cần bổ sung thêm các dưỡng chất thiết yếu như canxi, photpho, vitamin,... để hỗ trợ sức khoẻ.Dạng cốm giúp dễ tiêu hoá, kích thích vị giác của thú cưng, mang đến hiệu quả sử dụng cao nhất.</span>
+                                                </div>
+                                                <div class="product-m__wishlist">
+
+                                                    <a class="far fa-heart" href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip" data-placement="top" title="Yêu thích"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Thông tin ô sản phẩm 7-->
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="product-m">
+                                        <div class="product-m__thumb">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img" src="https://media.discordapp.net/attachments/856338901069070347/1174421378116632606/63a67cdcc5add4846350344f12d6a6c2.png?ex=65678824&is=65551324&hm=fa18fbcf3ba20116f0c1e491850e135d11943e1761416a3ad2e3a3f17f18e166&=&width=567&height=567" alt="Nón len con ếch">
+                                            </a>
+                                            <div class="product-m__quick-look">
+
+                                                <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                            </div>
+                                            <div class="product-m__add-cart">
+
+                                                <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ</a>
+                                            </div>
+                                        </div>
+                                        <div class="product-m__content">
+                                            <div class="product-m__category">
+
+                                                <a href="@Url.Action("Trang_san_pham", "Home")">Phụ kiện thú cưng</a>
+                                            </div>
+                                            <div class="product-m__name">
+
+                                                <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Nón đan len hình con ếch siêu to khổng lồ</a>
+                                            </div>
+                                            <div class="product-m__rating gl-rating-style">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star-half-alt"></i>
+
+                                                <span class="product-m__review">(43)</span>
+                                            </div>
+                                            <div class="product-m__price">59.000đ</div>
+                                            <div class="product-m__hover">
+                                                <div class="product-m__preview-description">
+
+                                                    <span>-Rất thích hợp cho bé cỡ nhỏ và những bé cỡ trung. Khi đội vào nhìn bé cực đáng yêu lun khi ba mẹ ôm bé cũng sẽ cực kì thích luôn đó nha! Bạn có thể Giữ Ấm đầu bé khi trời trở lạnh. Thời tiết sài gòn cũng sấp chuyển sang trời lạnh rồi vì vậy hãy sấm ngay một chiếc mũ cho bé nhà mình đi nào.</span>
+                                                </div>
+                                                <div class="product-m__wishlist">
+
+                                                    <a class="far fa-heart" href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip" data-placement="top" title="Yêu thích"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Thông tin ô sản phẩm 9-->
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="product-m">
+                                        <div class="product-m__thumb">
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                <img class="aspect__img" src="https://media.discordapp.net/attachments/937714098513272885/1185070768095252541/sg-11134201-7rbl3-logq6k4sidd66c.jpg?ex=658e4628&is=657bd128&hm=440e7c033da0238b1083eb3d6e015045a20244d2ee0a5bea4b1cb135f61d28f5&=&format=webp&width=563&height=563" alt="Nón gà cho mèo">
+                                            </a>
+                                            <div class="product-m__quick-look">
+
+                                                <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                            </div>
+                                            <div class="product-m__add-cart">
+
+                                                <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ</a>
+                                            </div>
+                                        </div>
+                                        <div class="product-m__content">
+                                            <div class="product-m__category">
+
+                                                <a href="@Url.Action("Trang_san_pham", "Home")">Phụ kiện thú cưng</a>
+                                            </div>
+                                            <div class="product-m__name">
+
+                                                <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Nón gà cho mèo</a>
+                                            </div>
+                                            <div class="product-m__rating gl-rating-style">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star-half-alt"></i>
+
+                                                <span class="product-m__review">(10)</span>
+                                            </div>
+                                            <span class="product-o__price">
+                                                50.000 VND
+
+                                                <span class="product-o__discount">75.000 VND</span>
+                                                <div class="product-m__hover">
+                                                    <div class="product-m__preview-description">
+
+                                                        <span>
+                                                            Nón được may bằng chất liệu vải bông mềm mịn có lót trong, hoa văn mắt mũi miệng thêu nổi xinh xắn
+                                                            Áo có phần nút gài có thể điều chỉnh độ rộng chật
+                                                        </span>.
+                                            </span>
+                                        </div>
+                                        <div class="product-m__wishlist">
+
+                                            <a class="far fa-heart" href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip" data-placement="top" title="Yêu thích"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product-m">
+                                <div class="product-m__thumb">
+
+                                    <a class="aspect aspect--bg-grey aspect--square u-d-block" href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                        <img class="aspect__img" src="https://media.discordapp.net/attachments/856338901069070347/1174422790447829053/o-dem-cho-cho-meo-paw-hinh-con-ca-map.png?ex=65678974&is=65551474&hm=850b22ab90dfa61560d49f2fd8e23970ead53b641a9afa824e1334e221add8b5&=&width=575&height=575" alt="Đệm nằm cá mập">
+                                    </a>
+                                    <div class="product-m__quick-look">
+
+                                        <a class="fas fa-search" data-modal="modal" data-modal-id="#quick-look" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"></a>
+                                    </div>
+                                    <div class="product-m__add-cart">
+
+                                        <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm vào giỏ</a>
+                                    </div>
+                                </div>
+                                <div class="product-m__content">
+                                    <div class="product-m__category">
+
+                                        <a href="@Url.Action("Trang_san_pham", "Home")">Chăm sóc thú cưng</a>
+                                    </div>
+                                    <div class="product-m__name">
+
+                                        <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Đệm nằm hình con cá mập khổng lồ</a>
+                                    </div>
+                                    <div class="product-m__rating gl-rating-style">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star-half-alt"></i>
+
+                                        <span class="product-m__review">(10)</span>
+                                    </div>
+                                    <div class="product-m__price">499.000đ</div>
+                                    <div class="product-m__hover">
+                                        <div class="product-m__preview-description">
+
+                                            <span>-Ổ đệm cho chó mèo PAW hình con cá mập với chất liệu vải nhung mềm mại, cao cấp an toàn cho thú cưng. Cho thú cưng một cảm giác êm ái khi nằm trên nệm. Với sắc xanh nổi bật. Được thiết kế cách điệu vô cùng đáng yêu.</span>
+                                        </div>
+                                        <div class="product-m__wishlist">
+
+                                            <a class="far fa-heart" href="@Url.Action("Yeu_thich", "Home")" data-tooltip="tooltip" data-placement="top" title="Yêu thích"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-s-p-y-60">
+
+                    <!--======Liên kết xem trang sản phẩm khác======-->
+                    <ul class="shop-p__pagination">
+                        <li>
+                            <a href="@Url.Action("Trang_san_pham", "Home")" style="font-size:14px;color:gray;">Đầu</a>
+                        </li>
+
+                        <li class="is-active">
+                            <a href="@Url.Action("Trang_san_pham", "Home")">1</a>
+                        </li>
+                        <li>
+
+                            <a href="@Url.Action("Trang_san_pham_2", "Home")">2</a>
+                        </li>
+                        <li>
+
+                            <a href="@Url.Action("Trang_san_pham", "Home")">3</a>
+                        </li>
+                        <li>
+
+                            <a href="@Url.Action("Trang_san_pham_2", "Home")">4</a>
+                        </li>
+                        <li>
+
+                            <a href="@Url.Action("Trang_san_pham", "Home")">5</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Trang_san_pham", "Home")" style="font-size:14px;color:gray;">Cuối
+                        </li>
+                        <li>
+                    </ul>
+                    <!--======Kết thúc liên kết xem trang khác ======-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>

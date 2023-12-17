@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewBag.Title = "ql_dang_nhap_admin";
+}
+
+
+
+<!--====== App Content ======-->
+<div class="app-content">
+
+    <!--====== Section 1 ======-->
+    <div class="u-s-p-y-60">
+
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="breadcrumb">
+                    <div class="breadcrumb__wrap">
+                        <ul class="breadcrumb__list">
+                            <li class="has-separator">
+
+                                <a href="@Url.Action("Index","Home")">Trang chủ</a>
+                            </li>
+                            <li class="is-marked">
+
+                                <a href="@Url.Action("ql_dang_nhap_admin","Home")">Đăng nhập</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== End - Section 1 ======-->
+    <!--====== Section 2 ======-->
+    <div class="u-s-p-b-60">
+
+        <!--====== Section Intro ======-->
+        <div class="section__intro u-s-m-b-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__text-wrap">
+                            <h1 class="section__heading u-c-secondary">ĐĂNG NHẬP DÀNH CHO ADMINISTRATOR PETAMIN</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Intro ======-->
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="row row--center">
+                    <div class="col-lg-6 col-md-8 u-s-m-b-30">
+                        <div class="l-f-o">
+                            <div class="l-f-o__pad-box">
+
+                                <form class="l-f-o__form">
+                                    <div class="gl-s-api">
+                                        <div class="u-s-m-b-15">
+
+
+                                            <div class="u-s-m-b-15">
+
+                                            </div>
+                                            <div class="u-s-m-b-30">
+
+                                                <label class="gl-label" for="login-email">User *</label>
+
+                                                <input class="input-text input-text--primary-style" type="text" id="login-email" placeholder="Petamin01">
+                                            </div>
+                                            <div class="u-s-m-b-30">
+
+                                                <label class="gl-label" for="login-password">Mật khẩu *</label>
+
+                                                <input class="input-text input-text--primary-style" type="text" id="login-password" placeholder="Petamin123!">
+                                            </div>
+                                            <div class="gl-inline">
+                                                <div class="u-s-m-b-30">
+
+                                                    <button class="btn btn--e-transparent-brand-b-2"><a class="gl-link" href="@Url.Action("ql_index", "Home")">ĐĂNG NHẬP</a></button>
+                                                </div>
+                                                <div class="u-s-m-b-30">
+
+                                                    <a class="gl-link" href="@Url.Action("Trang_Quen_mat_khau", "Home")">Bạn quên mật khẩu?</a>
+                                                </div>
+                                            </div>
+                                            <div class="u-s-m-b-30">
+
+                                                <!--====== Check Box ======-->
+                                                <div class="check-box">
+
+                                                    <input type="checkbox" id="remember-me">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="remember-me">Nhớ đăng nhập</label>
+                                                    </div>
+                                                </div>
+                                                <!--====== End - Check Box ======-->
+                                            </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Content ======-->
+    </div>
+    <!--====== End - Section 2 ======-->
+</div>
+<!--====== End - App Content ======-->

@@ -1,0 +1,1004 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <!--tương thích với các thiết bị có kích cỡ khác nhau]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="~/Content/images/favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="~/Content/button_fix.css">
+    <title>Petamin</title>
+
+    <!--====== Google Font ======-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+    <!--====== Vendor Css ======-->
+    <link rel="stylesheet" href="~/Content/css/vendor.css">
+    <!--====== Utility-Spacing ======-->
+    <link rel="stylesheet" href="~/Content/css/utility.css">
+
+    <!--====== App ======-->
+    <link rel="stylesheet" href="~/Content/css/app.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+
+<body class="config">
+    <div class="preloader is-active">
+        <div class="preloader__wrap">
+
+            <img class="preloader__img" src="images/preloader.png" alt="">
+        </div>
+    </div>
+
+    <!--====== Main App ======-->
+    <div id="app">
+
+        <!--====== HEADER CHÍNH ======-->
+        <header class="header--style-1">
+
+            <!--====== Nav 1 ======-->
+            <nav class="primary-nav primary-nav-wrapper--border">
+                <div class="container">
+
+                    <!--======THANH ĐIỀU HƯỚNG======-->
+                    <div class="primary-nav">
+
+                        <!--====== LOGO CHÍNH PETAMIN ======-->
+
+                        <a class="main-logo" href="@Url.Action("index", "Home")">
+
+                            <img src="https://media.discordapp.net/attachments/828978839677173801/1173922958029361182/ang_nhap.png?ex=6565b7f3&is=655342f3&hm=d5c2e73fa7989ae48f0f5229cad4b0a415095dfcaba1ebaab8cf3e9f056a7003&=&width=1192&height=670"
+                                 alt="">
+                        </a>
+                        <!--======END LOGO CHÍNH ======-->
+                        <!--======THANH TÌM KIẾM ======-->
+                        <form class="main-form">
+
+                            <label for="main-search"></label>
+
+                            <input class="input-text input-text--border-radius input-text--style-1" type="text"
+                                   id="main-search" placeholder="Tìm kiếm sản phẩm, dịch vụ">
+
+                            <button class="btn btn--icon fas fa-search main-search-button" href="@Url.Action("error404", "Home")"></button>
+                        </form>
+                        <!--====== End - Search Form ======-->
+                        <!--====== Dropdown Main plugin ======-->
+                        <div class="menu-init" id="navigation">
+
+                            <button class="btn btn--icon toggle-button toggle-button--secondary far fa-user-circle"
+                                    type="button"></button>
+
+                            <!--====== MENU TÀI KHOẢN GÓC BÊN PHẢI ======-->
+                            <div class="ah-lg-mode">
+
+                                <span class="ah-close">✕ Đóng</span>
+
+                                <!--====== List ======-->
+                                <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left"
+                                        title="Tài khoản">
+
+                                        <a><i class="far fa-user-circle"></i></a>
+
+                                        <!--======DS SỔ XUỐNG ======-->
+
+                                        <span class="js-menu-toggle"></span>
+                                        <ul style="width:120px">
+                                            <li>
+
+                                                <a href="@Url.Action("TDK_Bang_dieu_khien", "Home")">
+                                                    <i class="fas fa-user-circle u-s-m-r-6"></i>
+
+                                                    <span>Tài khoản</span>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("Trang_dang_ky", "Home")">
+                                                    <i class="fas fa-user-plus u-s-m-r-6"></i>
+
+                                                    <span>Đăng Ký</span>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("Trang_dang_nhap", "Home")">
+                                                    <i class="fas fa-lock u-s-m-r-6"></i>
+
+                                                    <span>Đăng nhập</span>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("ql_dang_nhap_admin", "Home")">
+                                                    <i class="fas fa-lock u-s-m-r-6"></i>
+
+                                                    <span>Admin</span>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("index", "Home")">
+                                                    <i class="fas fa-lock-open u-s-m-r-6"></i>
+
+                                                    <span>Đăng xuất</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!--====== End - Dropdown ======-->
+                                        <!--====== End - List ======-->
+                            </div>
+                            <!--====== End - Menu ======-->
+                        </div>
+                        <!--====== End - Dropdown Main plugin ======-->
+                    </div>
+                    <!--====== End - Primary Nav ======-->
+                </div>
+            </nav>
+            <!--====== End - Nav 1 ======-->
+            <!--====== Nav 2 ======-->
+            <nav class="secondary-nav-wrapper">
+                <div class="container">
+
+                    <!--======THANH ĐIỀU HƯỚNG CHÍNH  ======-->
+                    <div class="secondary-nav">
+
+
+                        <!-- Thanh bar -->
+                        <!--====== Dropdown Main plugin ======-->
+
+                        <div class="menu-init" id="navigation2">
+
+                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-bars"
+                                    type="button"></button>
+
+                            <!--====== MENU CHÍNH ======-->
+                            <div class="ah-lg-mode">
+
+                                <span class="ah-close">✕ Đóng</span>
+
+
+
+
+                                <!--====== End - Dropdown Main plugin ======-->
+                                <!--====== List ======-->
+                                <ul class="ah-list ah-list--design2 ah-list--link-color-secondary">
+
+                                    <li>
+                                        <a style="font-size: 18px; " ; href="@Url.Action("index", "Home")">TRANG CHỦ</a>
+                                    </li>
+                                    <li>
+                                        <a style="font-size: 18px" ; href="@Url.Action("Trang_gioi_thieu", "Home")">GIỚI THIỆU</a>
+                                    </li>
+                                    <!-- Drop down ơ đây tức có thả xuống nhiều mục -->
+                                    <li class="has-dropdown">
+
+                                        <a style="font-size: 18px" ; href="@Url.Action("Trang_san_pham", "Home")">
+                                            SẢN PHẨM<i class="fas fa-angle-down u-s-m-l-6"></i>
+                                        </a>
+
+                                        <!--====== Dropdown ======-->
+
+                                        <span class="js-menu-toggle"></span>
+                                        <ul style="width:200px">
+                                            <li>
+
+                                                <a href="@Url.Action("Trang_san_pham", "Home")">Dinh dưỡng</a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("Trang_san_pham", "Home")">Đồ dùng</a>
+                                            </li>
+                                            <li>
+
+                                                <a href="@Url.Action("Trang_san_pham", "Home")">Phụ kiện</a>
+                                            </li>
+
+                                        </ul>
+                                        <!--====== End - Dropdown ======-->
+                                    </li>
+
+                                    <li class="has-dropdown">
+
+                                        <a style="font-size: 18px" ; href="@Url.Action("Trang_dich_vu", "Home")">
+                                            DỊCH VỤ<i class="fas fa-angle-down u-s-m-l-6"></i>
+                                        </a>
+
+                                        <!--====== Dropdown ======-->
+
+                                        <span class="js-menu-toggle"></span>
+                                        <ul style="width:200px">
+                                            <li>
+
+                                                <a href="@Url.Action("Trang_dich_vu", "Home")">Tiêm phòng</a>
+                                            </li>
+                                            <li>
+                                                <a href="@Url.Action("Trang_dich_vu", "Home")">Huấn luyện</a>
+                                            </li>
+                                            <li>
+                                                <a href="@Url.Action("Trang_dich_vu", "Home")">Cắt/tỉa móng</a>
+                                            </li>
+                                            <li>
+                                                <a href="@Url.Action("Trang_dich_vu", "Home")">Vệ sinh</a>
+                                            </li>
+                                            <li>
+                                                <a href="@Url.Action("Trang_dich_vu", "Home")">Cắt/tỉa lông</a>
+                                            </li>
+                                            <li>
+                                                <a href="@Url.Action("Trang_dich_vu", "Home")">Khám bệnh</a>
+                                            </li>
+
+                                        </ul>
+                                        <!--====== End - Dropdown ======-->
+                                    </li>
+
+
+                                    <li>
+                                        <a style="font-size: 18px" ; href="@Url.Action("Trang_blog", "Home")">BLOG</a>
+                                    </li>
+                                    <li>
+                                        <a style="font-size: 18px" ; href="@Url.Action("Trang_Lien_he", "Home")">LIÊN HỆ</a>
+                                    </li>
+
+                                </ul>
+                                <!--====== End - List ======-->
+                            </div>
+                            <!--====== End - Menu ======-->
+                        </div>
+                        <!--====== End - Dropdown Main plugin ======-->
+                        <!-- GIỎ HÀNH -->
+                        <!--====== Dropdown Main plugin ======-->
+                        <div class="menu-init" id="navigation3">
+
+                            <button class="btn btn--icon toggle-button toggle-button--secondary fas fa-shopping-bag toggle-button-shop"
+                                    type="button"></button>
+
+                            <span class="total-item-round">3</span>
+
+                            <!--====== Menu ======-->
+                            <div class="ah-lg-mode">
+
+                                <span class="ah-close">✕ Đóng</span>
+
+                                <!--====== List ======-->
+                                <ul class="ah-list ah-list--design1 ah-list--link-color-secondary">
+
+                                    <li>
+
+                                        <a href="@Url.Action("Yeu_thich", "Home")"><i class="far fa-heart"></i></a>
+                                    </li>
+                                    <li class="has-dropdown">
+
+                                        <a class="mini-cart-shop-link">
+                                            <i class="fas fa-shopping-bag"></i>
+
+                                            <span class="total-item-round">3</span>
+                                        </a>
+
+                                        <!--====== Dropdown ======-->
+
+                                        <span class="js-menu-toggle"></span>
+                                        <div class="mini-cart">
+
+                                            <!--====== Mini Product Container ======-->
+                                            <div class="mini-product-container gl-scroll u-s-m-b-15">
+
+                                                <!--====== THẺ CHO GIỎ HÀNG NHỎ HIỂN THỊ ĐẺ XEM NHANH ======-->
+                                                <div class="card-mini-product">
+                                                    <div class="mini-product">
+                                                        <div class="mini-product__image-wrapper">
+
+                                                            <a class="mini-product__link" href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                                <img class="u-img-fluid"
+                                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1173964515294064700/90200896615f5103cda4da7cb1fc0f48.png?ex=6565dea7&is=655369a7&hm=d6b8b9cd394c08c666d774b67596aeb20f000e5f1aa78011487c6b7e7ac5c344&"
+                                                                     alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="mini-product__info-wrapper">
+
+                                                            <span class="mini-product__category">
+
+                                                                <a href="@Url.Action("Trang_san_pham", "Home")">Đồ chơi</a>
+                                                            </span>
+
+                                                            <span class="mini-product__name">
+
+                                                                <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Cây trêu mèo</a>
+                                                            </span>
+
+                                                            <span class="mini-product__quantity">1 x</span>
+
+                                                            <span class="mini-product__price">80.000 VND</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
+                                                </div>
+                                                <!--====== End - Card for mini cart ======-->
+                                                <!--====== THẺ SẢN PHẨM t2 ======-->
+                                                <div class="card-mini-product">
+                                                    <div class="mini-product">
+                                                        <div class="mini-product__image-wrapper">
+
+                                                            <a class="mini-product__link" href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                                <img class="u-img-fluid"
+                                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1173965296135057448/thuc-an-cho-cho-con-co-nho-royal-canin-mini-puppy1-400x400.png?ex=6565df61&is=65536a61&hm=4aa99fc8fe9cc5e8a2ec2f8c0fa03d5a9eb185577911fc5b327772b8c0d2997f&"
+                                                                     alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="mini-product__info-wrapper">
+
+                                                            <span class="mini-product__category">
+
+                                                                <a href="@Url.Action("Trang_san_pham", "Home")">Dinh dưỡng</a>
+                                                            </span>
+
+                                                            <span class="mini-product__name">
+
+                                                                <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+                                                                    Pate cho chó vị thịt bò
+                                                                    IRIS OHYAMA One Care Beef
+                                                                </a>
+                                                            </span>
+
+                                                            <span class="mini-product__quantity">1 x</span>
+
+                                                            <span class="mini-product__price">35.000 VND</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
+                                                </div>
+                                                <!--====== End - Card for mini cart ======-->
+                                                <!--====== Card for mini cart ======-->
+                                                <div class="card-mini-product">
+                                                    <div class="mini-product">
+                                                        <div class="mini-product__image-wrapper">
+
+                                                            <a class="mini-product__link" href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">
+
+                                                                <img class="u-img-fluid"
+                                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1173966167124234301/vn-11134207-7r98o-lndube2r8lpp5e.png?ex=6565e031&is=65536b31&hm=97e250bd8412e25a004b7115142df2f64977685bed4821b9345d0852c74c8853&"
+                                                                     alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="mini-product__info-wrapper">
+
+                                                            <span class="mini-product__category">
+
+                                                                <a href="@Url.Action("Trang_san_pham", "Home")">Trang phục</a>
+                                                            </span>
+
+                                                            <span class="mini-product__name">
+
+                                                                <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Nón cho mèo</a>
+                                                            </span>
+
+                                                            <span class="mini-product__quantity">1 x</span>
+
+                                                            <span class="mini-product__price">50.000 VND</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <a class="mini-product__delete-link far fa-trash-alt"></a>
+                                                </div>
+                                                <!--====== End - Card for mini cart ======-->
+
+                                            </div>
+                                            <!--====== End - Mini Product Container ======-->
+                                            <!--====== TRONG GIỎ HÀNG (TIẾN HÀNH THANH TOÁN VÀ TÍNH TỔNG) ======-->
+                                            <div class="mini-product-stat">
+                                                <div class="mini-total">
+
+                                                    <span class="subtotal-text">Tổng</span>
+
+                                                    <span class="subtotal-value">165.000 VND</span>
+                                                </div>
+                                                <div class="mini-action">
+
+                                                    <a class="mini-link btn--e-brand-b-2"
+                                                       href="@Url.Action("Trang_Thanh_Toan", "Home")">Tiến hành thanh toán</a>
+
+                                                    <a class="mini-link btn--e-transparent-secondary-b-2"
+                                                       href="@Url.Action("Trang_gio_hang", "Home")">Xem giỏ hàng</a>
+                                                </div>
+                                            </div>
+                                            <!--====== End - Mini Product Statistics ======-->
+                                        </div>
+                                        <!--====== End - Dropdown ======-->
+                                    </li>
+                                </ul>
+                                <!--====== End - List ======-->
+                            </div>
+                            <!--====== End - Menu ======-->
+                        </div>
+                        <!--====== End - Dropdown Main plugin ======-->
+                    </div>
+                    <!--====== End - Secondary Nav ======-->
+                </div>
+            </nav>
+            <br>
+            <!--====== End - Nav 2 ======-->
+        </header>
+        <!--====== End - Main Header ======-->
+        <div>
+            @RenderBody();
+        </div>
+
+
+        <!--====== Main Footer ======-->
+        <footer>
+            <div class="outer-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="outer-footer__content u-s-m-b-40">
+
+                                <span class="outer-footer__content-title">Liên hệ chúng tôi</span>
+                                <div class="outer-footer__text-wrap">
+                                    <i class="fas fa-home"></i>
+
+                                    <span>279 Nguyễn Tri Phương, phường 5, quận 10, TP.HCM</span>
+                                </div>
+                                <div class="outer-footer__text-wrap">
+                                    <i class="fas fa-phone-volume"></i>
+
+                                    <span>+012 345 6789</span>
+                                </div>
+                                <div class="outer-footer__text-wrap">
+                                    <i class="far fa-envelope"></i>
+
+                                    <span>petamin@gmail.com</span>
+                                </div>
+                                <div class="outer-footer__social">
+                                    <ul>
+                                        <li>
+
+                                            <a class="s-fb--color-hover" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+
+                                            <a class="s-youtube--color-hover" href="#">
+                                                <i class="fab fa-youtube"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a class="s-insta--color-hover" href="#">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a class="s-gplus--color-hover" href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="outer-footer__content u-s-m-b-40">
+
+                                        <span class="outer-footer__content-title">Về PETAMIN</span>
+                                        <div class="outer-footer__list-wrap">
+                                            <ul>
+                                                <li>
+
+                                                    <a href="@Url.Action("index", "Home")">Trang chủ</a>
+                                                </li>
+                                                <li>
+                                                <li>
+
+                                                    <a href="@Url.Action("Trang_gioi_thieu", "Home")">Giới thiệu</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="@Url.Action("Trang_san_pham", "Home")">Sản phẩm</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="@Url.Action("Trang_dich_vu", "Home")">Dịch vụ</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="@Url.Action("Trang_blog", "Home")">Blog</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="@Url.Action("Trang_Lien_he", "Home")">Liên hệ</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="outer-footer__content u-s-m-b-40">
+                                        <div class="outer-footer__list-wrap">
+
+                                            <span class="outer-footer__content-title">Chính sách</span>
+                                            <ul>
+                                                <li>
+
+                                                    <a href="@Url.Action("Trang_Lien_he", "Home")">Trả hàng và hoàn tiền</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="@Url.Action("Trang_Lien_he", "Home")">Chính sách bảo mật</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="@Url.Action("Trang_Lien_he", "Home")">Mua 1 đổi 1</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="@Url.Action("Trang_Lien_he", "Home")">Chính sách vận chuyển</a>
+                                                </li>
+                                                <li>
+
+                                                    <a href="@Url.Action("Trang_Lien_he", "Home")">Thanh toán</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="outer-footer__content">
+
+                                <span class="outer-footer__content-title">Nhận thông báo của chúng tôi</span>
+                                <form class="newsletter">
+                                    <div class="u-s-m-b-15">
+                                        <div class="radio-box newsletter__radio">
+
+                                            <input type="radio" id="male" name="gender">
+                                            <div class="radio-box__state radio-box__state--primary">
+
+                                                <label class="radio-box__label" for="male">Nam</label>
+                                            </div>
+                                        </div>
+                                        <div class="radio-box newsletter__radio">
+
+                                            <input type="radio" id="female" name="gender">
+                                            <div class="radio-box__state radio-box__state--primary">
+
+                                                <label class="radio-box__label" for="female">Nữ</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="newsletter__group">
+
+                                        <label for="newsletter"></label>
+
+                                        <input class="input-text input-text--only-white" type="text" id="newsletter"
+                                               placeholder="Email của bạn">
+
+                                        <button class="btn btn--e-brand newsletter__btn" type="submit">Đăng ký</button>
+                                    </div>
+
+                                    <span class="newsletter__text">
+                                        Đăng ký để nhận thông tin cập nhật về chương trình
+                                        khuyến mãi, hàng mới, giảm giá và phiếu giảm giá.
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="lower-footer__content">
+                                <div class="lower-footer__copyright">
+
+                                    <span>Copyright © PETAMIN_GROUPs</span>
+                                </div>
+                                <div class="lower-footer__payment">
+                                    <ul>
+                                        <li><i class="fab fa-cc-stripe"></i></li>
+                                        <li><i class="fab fa-cc-paypal"></i></li>
+                                        <li><i class="fab fa-cc-mastercard"></i></li>
+                                        <li><i class="fab fa-cc-visa"></i></li>
+                                        <li><i class="fab fa-cc-discover"></i></li>
+                                        <li><i class="fab fa-cc-amex"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--====== Modal Section ======-->
+        <!-- Khi ta bấm vào quick view của một sản phẩm, sẽ ra phần này  -->
+        <!--====== Quick Look Modal ======-->
+        <div class="modal fade" id="quick-look">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal--shadow">
+
+                    <button class="btn dismiss-button fas fa-times" type="button" data-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-5">
+
+                                <!--====== Product Breadcrumb ======-->
+                                <div class="pd-breadcrumb u-s-m-b-30">
+                                    <ul class="pd-breadcrumb__list">
+                                        <li class="has-separator">
+
+                                            <a href="@Url.Action("Index.html", "Home")">Trang chủ</a>
+                                        </li>
+                                        <li class="has-separator is-marked">
+
+                                            <a href="@Url.Action("Trang_san_pham", "Home")">Dinh dưỡng</a>
+                                        </li>
+                                        <li class="has-separator">
+
+                                            <a href="@Url.Action("Trang_san_pham", "Home")">Đồ dùng</a>
+                                        </li>
+                                        <li class="has-separato">
+
+                                            <a href="@Url.Action("Trang_san_pham", "Home")">Phụ kiện</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--====== End - Product Breadcrumb ======-->
+                                <!-- Khi bấm vào link của sản phẩm -->
+                                <!--====== Product Detail ======-->
+                                <div class="pd u-s-m-b-30">
+                                    <div class="pd-wrap">
+                                        <div id="js-product-detail-modal">
+                                            <div>
+
+                                                <img class="u-img-fluid"
+                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1173965296135057448/thuc-an-cho-cho-con-co-nho-royal-canin-mini-puppy1-400x400.png?ex=6565df61&is=65536a61&hm=4aa99fc8fe9cc5e8a2ec2f8c0fa03d5a9eb185577911fc5b327772b8c0d2997f&"
+                                                     alt="">
+                                            </div>
+                                            <div>
+
+                                                <img class="u-img-fluid"
+                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1173965296135057448/thuc-an-cho-cho-con-co-nho-royal-canin-mini-puppy1-400x400.png?ex=6565df61&is=65536a61&hm=4aa99fc8fe9cc5e8a2ec2f8c0fa03d5a9eb185577911fc5b327772b8c0d2997f&"
+                                                     alt="">
+                                            </div>
+                                            <div>
+
+                                                <img class="u-img-fluid"
+                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1173965296135057448/thuc-an-cho-cho-con-co-nho-royal-canin-mini-puppy1-400x400.png?ex=6565df61&is=65536a61&hm=4aa99fc8fe9cc5e8a2ec2f8c0fa03d5a9eb185577911fc5b327772b8c0d2997f&"
+                                                     alt="">
+                                            </div>
+                                            <div>
+
+                                                <img class="u-img-fluid"
+                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1173965296135057448/thuc-an-cho-cho-con-co-nho-royal-canin-mini-puppy1-400x400.png?ex=6565df61&is=65536a61&hm=4aa99fc8fe9cc5e8a2ec2f8c0fa03d5a9eb185577911fc5b327772b8c0d2997f&"
+                                                     alt="">
+                                            </div>
+                                            <div>
+
+                                                <img class="u-img-fluid"
+                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1173965296135057448/thuc-an-cho-cho-con-co-nho-royal-canin-mini-puppy1-400x400.png?ex=6565df61&is=65536a61&hm=4aa99fc8fe9cc5e8a2ec2f8c0fa03d5a9eb185577911fc5b327772b8c0d2997f&"
+                                                     alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="u-s-m-t-15">
+                                        <div id="js-product-detail-modal-thumbnail">
+                                            <div>
+
+                                                <img class="u-img-fluid"
+                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1173965296135057448/thuc-an-cho-cho-con-co-nho-royal-canin-mini-puppy1-400x400.png?ex=6565df61&is=65536a61&hm=4aa99fc8fe9cc5e8a2ec2f8c0fa03d5a9eb185577911fc5b327772b8c0d2997f&"
+                                                     alt="">
+                                            </div>
+                                            <div>
+
+                                                <img class="u-img-fluid"
+                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1173965296135057448/thuc-an-cho-cho-con-co-nho-royal-canin-mini-puppy1-400x400.png?ex=6565df61&is=65536a61&hm=4aa99fc8fe9cc5e8a2ec2f8c0fa03d5a9eb185577911fc5b327772b8c0d2997f&"
+                                                     alt="">
+                                            </div>
+                                            <div>
+
+                                                <img class="u-img-fluid"
+                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1173965296135057448/thuc-an-cho-cho-con-co-nho-royal-canin-mini-puppy1-400x400.png?ex=6565df61&is=65536a61&hm=4aa99fc8fe9cc5e8a2ec2f8c0fa03d5a9eb185577911fc5b327772b8c0d2997f&"
+                                                     alt="">
+                                            </div>
+                                            <div>
+
+                                                <img class="u-img-fluid"
+                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1173965296135057448/thuc-an-cho-cho-con-co-nho-royal-canin-mini-puppy1-400x400.png?ex=6565df61&is=65536a61&hm=4aa99fc8fe9cc5e8a2ec2f8c0fa03d5a9eb185577911fc5b327772b8c0d2997f&"
+                                                     alt="">
+                                            </div>
+                                            <div>
+
+                                                <img class="u-img-fluid"
+                                                     src="https://cdn.discordapp.com/attachments/828978839677173801/1173965296135057448/thuc-an-cho-cho-con-co-nho-royal-canin-mini-puppy1-400x400.png?ex=6565df61&is=65536a61&hm=4aa99fc8fe9cc5e8a2ec2f8c0fa03d5a9eb185577911fc5b327772b8c0d2997f&"
+                                                     alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--====== End - Product Detail ======-->
+                            </div>
+                            <div class="col-lg-7">
+
+                                <!--====== Product Right Side Details ======-->
+                                <div class="pd-detail">
+                                    <div>
+
+                                        <span class="pd-detail__name">
+                                            Pate cho chó vị thịt bò IRIS OHYAMA One Care
+                                            Beef
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="pd-detail__inline">
+
+                                            <span class="pd-detail__price">35.000 VND</span>
+
+                                            <span class="pd-detail__discount">(30%)</span><del class="pd-detail__del">50.000 VND</del>
+                                        </div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <div class="pd-detail__rating gl-rating-style">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                            <span class="pd-detail__review u-s-m-l-4">
+
+                                                <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">304 Đánh giá</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <div class="pd-detail__inline">
+
+                                            <span class="pd-detail__stock">200 sản phẩm trong kho</span>
+
+                                            <span class="pd-detail__left">Chỉ còn giảm giá trong 2 ngày</span>
+                                        </div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+
+                                        <span class="pd-detail__preview-desc">
+                                            Pate thơm ngon, đầy đủ dinh dưỡng cho
+                                            chó
+                                        </span>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <div class="pd-detail__inline">
+
+                                            <span class="pd-detail__click-wrap">
+                                                <i class="far fa-heart u-s-m-r-6"></i>
+
+                                                <a href="@Url.Action("Yeu_thich", "Home")">Thêm vào danh sách yêu thích</a>
+
+                                                <span class="pd-detail__click-count">(119)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <div class="pd-detail__inline">
+
+                                            <span class="pd-detail__click-wrap">
+                                                <i class="far fa-envelope u-s-m-r-6"></i>
+
+                                                <a href="@Url.Action("Trang_dang_nhap", "Home")">Email tôi khi giá giảm xuống</a>
+
+                                                <span class="pd-detail__click-count">(20)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <ul class="pd-social-list">
+                                            <li>
+
+                                                <a class="s-fb--color-hover" href="#">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+
+                                                <a class="s-insta--color-hover" href="#">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a class="s-wa--color-hover" href="#">
+                                                    <i class="fab fa-whatsapp"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+
+                                                <a class="s-gplus--color-hover" href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <form class="pd-detail__form">
+                                            <div class="pd-detail-inline-2">
+                                                <div class="u-s-m-b-15">
+
+                                                    <!--====== Input Counter ======-->
+                                                    <div class="input-counter">
+
+                                                        <span class="input-counter__minus fas fa-minus"></span>
+
+                                                        <input class="input-counter__text input-counter--text-primary-style"
+                                                               type="text" value="1" data-min="1" data-max="1000">
+
+                                                        <span class="input-counter__plus fas fa-plus"></span>
+                                                    </div>
+                                                    <!--====== End - Input Counter ======-->
+                                                </div>
+                                                <div class="u-s-m-b-15">
+
+                                                    <button class="btn btn--e-brand-b-2" type="submit">
+                                                        Thêm vào giỏ
+                                                        hàng
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+
+                                        <span class="pd-detail__label u-s-m-b-8">Chính sách sản phẩm:</span>
+                                        <ul class="pd-detail__policy-list">
+                                            <li>
+                                                <i class="fas fa-check-circle u-s-m-r-8"></i>
+
+                                                <span>Bảo vệ người mua.</span>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-check-circle u-s-m-r-8"></i>
+
+                                                <span>Hoàn trả đầy đủ nếu bạn không nhận được đơn đặt hàng của  mình.</span>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-check-circle u-s-m-r-8"></i>
+
+                                                <span>Chấp nhận đổi trả nếu sản phẩm không như mô tả</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--====== End - Product Right Side Details ======-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Quick Look Modal ======-->
+        <!--====== Add to Cart Modal ======-->
+        <div class="modal fade" id="add-to-cart">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-radius modal-shadow">
+
+                    <button class="btn dismiss-button fas fa-times" type="button" data-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="success u-s-m-b-30">
+                                    <div class="success__text-wrap">
+                                        <i class="fas fa-check"></i>
+
+                                        <span>Thành công thêm sản phẩm vào giỏ hàng</span>
+                                    </div>
+                                    <div class="success__img-wrap">
+
+                                        <img class="u-img-fluid"
+                                             src="https://cdn.discordapp.com/attachments/828978839677173801/1173965296135057448/thuc-an-cho-cho-con-co-nho-royal-canin-mini-puppy1-400x400.png?ex=6565df61&is=65536a61&hm=4aa99fc8fe9cc5e8a2ec2f8c0fa03d5a9eb185577911fc5b327772b8c0d2997f&"
+                                             alt="">
+                                    </div>
+                                    <div class="success__info-wrap">
+
+                                        <span class="success__name">
+                                            Pate cho chó vị thịt bò IRIS OHYAMA One Care
+                                            Beef
+                                        </span>
+
+                                        <span class="success__quantity">Số lượng: 1</span>
+
+                                        <span class="success__price">35.000 VND</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="s-option">
+
+                                    <span class="s-option__text">1 sản phẩm trong giỏ hàng của bạn</span>
+                                    <div class="s-option__link-box">
+
+                                        <a class="s-option__link btn--e-white-brand-shadow" data-dismiss="modal">
+                                            TIẾP
+                                            TỤC MUA SẮM
+                                        </a>
+
+                                        <a class="s-option__link btn--e-white-brand-shadow" href="@Url.Action("Trang_gio_hang", "Home")">
+                                            XEM GIỎ
+                                            HÀNG
+                                        </a>
+
+                                        <a class="s-option__link btn--e-brand-shadow" href="@Url.Action("Trang_Thanh_Toan", "Home")">
+                                            TIẾN
+                                            HÀNH THANH TOÁN
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Add to Cart Modal ======-->
+        <!--====== End - Modal Section ======-->
+    </div>
+    <!--====== End - Main App ======-->
+    <!--====== Google Analytics: change UA-XXXXX-Y to be your site's ID ======-->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    <!--====== Vendor Js ======-->
+    <script src="~/Content/js/vendor.js"></script>
+    <!--====== jQuery Shopnav plugin ======-->
+    <script src="~/Content/js/jquery.shopnav.js"></script>
+
+    <!--====== App ======-->
+    <script src="~/Content/js/app.js"></script>
+
+    <!--====== Noscript ======-->
+    <noscript>
+        <div class="app-setting">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="app-setting__wrap">
+                            <h1 class="app-setting__h1">JavaScript is disabled in your browser.</h1>
+
+                            <span class="app-setting__text">
+                                Please enable JavaScript in your browser or upgrade to a
+                                JavaScript-capable browser.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </noscript>
+</body>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
+
+</html>

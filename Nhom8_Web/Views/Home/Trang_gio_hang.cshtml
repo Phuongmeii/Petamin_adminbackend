@@ -1,0 +1,369 @@
+﻿
+@{
+    ViewBag.Title = "Trang_gio_hang";
+}
+
+
+<!--====== App Content ======-->
+<div class="app-content">
+
+    <!--====== Section 1 ======-->
+    <div class="u-s-p-y-60">
+
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="breadcrumb">
+                    <div class="breadcrumb__wrap">
+                        <ul class="breadcrumb__list">
+                            <li class="has-separator">
+
+                                <a href="@Url.Action("index", "Home")">Trang chủ</a>
+                            </li>
+                            <li class="is-marked">
+
+                                <a href="@Url.Action("Trang_gio_hang", "Home")">Giỏ hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== End - Section 1 ======-->
+    <!--====== Section 2 ======-->
+    <div class="u-s-p-b-60">
+
+        <!--====== Section Intro ======-->
+        <div class="section__intro u-s-m-b-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section__text-wrap">
+                            <h1 class="section__heading u-c-secondary">GIỎ HÀNG</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Intro ======-->
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 u-s-m-b-30">
+                        <div class="table-responsive">
+                            <table class="table-p">
+                                <tbody>
+
+                                    <!--====== Row ======-->
+                                    <tr>
+                                        <td>
+                                            <div class="table-p__box">
+                                                <div class="table-p__img-wrap">
+
+                                                    <img class="u-img-fluid" src="https://cdn.discordapp.com/attachments/828978839677173801/1173964515294064700/90200896615f5103cda4da7cb1fc0f48.png?ex=6565dea7&is=655369a7&hm=d6b8b9cd394c08c666d774b67596aeb20f000e5f1aa78011487c6b7e7ac5c344&" alt="">
+                                                </div>
+                                                <div class="table-p__info">
+
+                                                    <span class="table-p__name">
+
+                                                        <a href="@Url.Action("Trang_chi_tiet_san_pham_2", "Home")">Cây trêu mèo</a>
+                                                    </span>
+
+                                                    <span class="table-p__category">
+
+                                                        <a href="@Url.Action("Trang_san_pham", "Home")">Phụ kiện thú cưng</a>
+                                                    </span>
+                                                    <ul class="table-p__variant-list">
+                                                        <li>
+
+                                                            <span>Size: 1</span>
+                                                        </li>
+                                                        <li>
+
+                                                            <span>Màu: đỏ</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+
+                                            <span class="table-p__price">80.000đ</span>
+                                        </td>
+                                        <td>
+                                            <div class="table-p__input-counter-wrap">
+
+                                                <!--====== Input Counter ======-->
+                                                <div class="input-counter">
+
+                                                    <span class="input-counter__minus fas fa-minus"></span>
+
+                                                    <input class="input-counter__text input-counter--text-primary-style" type="text" value="1" data-min="1" data-max="1000">
+
+                                                    <span class="input-counter__plus fas fa-plus"></span>
+                                                </div>
+                                                <!--====== End - Input Counter ======-->
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-p__del-wrap">
+
+                                                <a class="far fa-trash-alt table-p__delete-link" href="@Url.Action("empty_gio_hang", "Home")"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!--====== End - Row ======-->
+                                    <!--====== Row ======-->
+                                    <tr>
+                                        <td>
+                                            <div class="table-p__box">
+                                                <div class="table-p__img-wrap">
+
+                                                    <img class="u-img-fluid" src="https://cdn.discordapp.com/attachments/828978839677173801/1173965296135057448/thuc-an-cho-cho-con-co-nho-royal-canin-mini-puppy1-400x400.png?ex=6565df61&is=65536a61&hm=4aa99fc8fe9cc5e8a2ec2f8c0fa03d5a9eb185577911fc5b327772b8c0d2997f&" alt="">
+                                                </div>
+                                                <div class="table-p__info">
+
+                                                    <span class="table-p__name">
+
+                                                        <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Pate chó vị thịt bò</a>
+                                                    </span>
+
+                                                    <span class="table-p__category">
+
+                                                        <a href="@Url.Action("Trang_san_pham", "Home")">Dinh dưỡng thú cưng</a>
+                                                    </span>
+                                                    <ul class="table-p__variant-list">
+                                                        <li>
+
+                                                            <span>Khối lượng: 500g</span>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+
+                                            <span class="table-p__price">35.000đ</span>
+                                        </td>
+                                        <td>
+                                            <div class="table-p__input-counter-wrap">
+
+                                                <!--====== Input Counter ======-->
+                                                <div class="input-counter">
+
+                                                    <span class="input-counter__minus fas fa-minus"></span>
+
+                                                    <input class="input-counter__text input-counter--text-primary-style" type="text" value="1" data-min="1" data-max="1000">
+
+                                                    <span class="input-counter__plus fas fa-plus"></span>
+                                                </div>
+                                                <!--====== End - Input Counter ======-->
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-p__del-wrap">
+
+                                                <a class="far fa-trash-alt table-p__delete-link" href="@Url.Action("empty_gio_hang", "Home")"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!--====== End - Row ======-->
+                                    <!--====== Row ======-->
+                                    <tr>
+                                        <td>
+                                            <div class="table-p__box">
+                                                <div class="table-p__img-wrap">
+
+                                                    <img class="u-img-fluid" src="https://cdn.discordapp.com/attachments/1174352085177864263/1174395296273412236/399996870_633617078718000_3458912288649802191_n.png?ex=65676fd9&is=6554fad9&hm=77ba48e34185f67bdceda8a51f119fac4ac0ea4b0e2dc34f9a658426eab01412&" alt="">
+                                                </div>
+                                                <div class="table-p__info">
+
+                                                    <span class="table-p__name">
+
+                                                        <a href="@Url.Action("Trang_chi_tiet_san_pham", "Home")">Nón cho mèo</a>
+                                                    </span>
+
+                                                    <span class="table-p__category">
+
+                                                        <a href="@Url.Action("Trang_san_pham", "Home")">Phụ kiện thú cưng</a>
+                                                    </span>
+                                                    <ul class="table-p__variant-list">
+                                                        <li>
+
+                                                            <span>Màu: Vàng</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+
+                                            <span class="table-p__price">50.000đ</span>
+                                        </td>
+                                        <td>
+                                            <div class="table-p__input-counter-wrap">
+
+                                                <!--====== Input Counter ======-->
+                                                <div class="input-counter">
+
+                                                    <span class="input-counter__minus fas fa-minus"></span>
+
+                                                    <input class="input-counter__text input-counter--text-primary-style" type="text" value="1" data-min="1" data-max="1000">
+
+                                                    <span class="input-counter__plus fas fa-plus"></span>
+                                                </div>
+                                                <!--====== End - Input Counter ======-->
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table-p__del-wrap">
+
+                                                <a class="far fa-trash-alt table-p__delete-link" href="@Url.Action("empty_gio_hang", "Home")"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!--====== End - Row ======-->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="route-box">
+                            <div class="route-box__g1">
+
+                                <a class="route-box__link" href="@Url.Action("Trang_san_pham", "Home")">
+                                    <i class="fas fa-long-arrow-alt-left"></i>
+
+                                    <span>TIẾP TỤC MUA SẮM</span>
+                                </a>
+                            </div>
+                            <div class="route-box__g2">
+
+                                <a class="route-box__link" href="@Url.Action("Trang_gio_hang", "Home")">
+                                    <i class="fas fa-trash"></i>
+
+                                    <span>BỎ GIỎ HÀNG</span>
+                                </a>
+
+                                <a class="route-box__link" href="@Url.Action("Trang_gio_hang", "Home")">
+                                    <i class="fas fa-sync"></i>
+
+                                    <span>CẬP NHẬT GIỎ HÀNG</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Content ======-->
+    </div>
+    <!--====== End - Section 2 ======-->
+    <!--====== Section 3 ======-->
+    <div class="u-s-p-b-60">
+
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 u-s-m-b-30">
+                        <form class="f-cart">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 u-s-m-b-30">
+                                    <div class="f-cart__pad-box">
+                                        <h1 class="gl-h1">TÍNH TOÁN TIỀN SHIP VÀ THUẾ</h1>
+
+                                        <span class="gl-text u-s-m-b-30">Điền địa chỉ giao hàng để tính toán phí ship</span>
+                                        <div class="u-s-m-b-30">
+
+                                            <!--====== Select Box ======-->
+
+                                            <label class="gl-label" for="shipping-country">THÀNH PHỐ *</label><select class="select-box select-box--primary-style" id="shipping-country">
+                                                <option selected value="">Chọn thành phố</option>
+                                                <option value="uae">Thành phố Hồ Chí Minh (TPHCM)</option>
+                                                <option value="uk">Thành phố Hà Nội (TPHCM)</option>
+
+                                            </select>
+                                            <!--====== End - Select Box ======-->
+                                        </div>
+                                        <div class="u-s-m-b-30">
+
+                                            <!--====== Select Box ======-->
+
+                                            <label class="gl-label" for="shipping-state">Quận/huyện *</label><select class="select-box select-box--primary-style" id="shipping-state">
+                                                <option selected value="">Chọn quận/huyện</option>
+                                                <option value="al">Quận 10</option>
+                                                <option value="al">Quận 9</option>
+                                                <option value="ny">Quận 8/option>
+                                            </select>
+                                            <!--====== End - Select Box ======-->
+                                        </div>
+                                        <div class="u-s-m-b-30">
+
+                                            <label class="gl-label" for="shipping-zip">Mã zip </label>
+
+                                            <input class="input-text input-text--primary-style" type="text" id="shipping-zip" placeholder="Zip/Postal Code">
+                                        </div>
+                                        <div class="u-s-m-b-30">
+
+                                            <a class="f-cart__ship-link btn--e-transparent-brand-b-2" href="@Url.Action("Trang_gio_hang", "Home")">ƯỚC TÍNH PHÍ SHIP</a>
+                                        </div>
+
+                                        <span class="gl-text">Lưu ý: Có một số quốc gia áp dụng miễn phí vận chuyển, nếu không, phí cố định hoặc phí giao hàng theo quốc gia của chúng tôi sẽ được áp dụng.</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 u-s-m-b-30">
+                                    <div class="f-cart__pad-box">
+                                        <h1 class="gl-h1">GHI CHÚ</h1>
+
+                                        <span class="gl-text u-s-m-b-30">Thêm ghi chú với sản phẩm đặc biệt của bạn</span>
+                                        <div>
+
+                                            <label for="f-cart-note"></label><textarea class="text-area text-area--primary-style" id="f-cart-note"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 u-s-m-b-30">
+                                    <div class="f-cart__pad-box">
+                                        <div class="u-s-m-b-30">
+                                            <table class="f-cart__table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Phí ship</td>
+                                                        <td>20.000 vnđ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Thuế</td>
+                                                        <td>0đ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>TỔNG TIỀN HÀNG</td>
+                                                        <td>165.000đ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>TỔNG TIỀN</td>
+                                                        <td>185.000đ</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div>
+
+                                            <button class="btn btn--e-brand-b-2" type="submit"> TIẾN HÀNH THANH TOÁN</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Content ======-->
+    </div>
+    <!--====== End - Section 3 ======-->
+</div>
+<!--====== End - App Content ======-->

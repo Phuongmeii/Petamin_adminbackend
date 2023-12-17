@@ -1,0 +1,62 @@
+﻿@model Nhom8_Web.Models.DonHang
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="container">
+
+    <h2>Details</h2>
+
+    <div>
+        <h4>DonHang</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.KhachHangObj.HoVaTen)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.KhachHangObj.HoVaTen)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TrangThai)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TrangThai)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TrangThaiThanhToan)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TrangThaiThanhToan)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TongTien)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TongTien)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.NgayLap)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NgayLap)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) 
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+
+</div>

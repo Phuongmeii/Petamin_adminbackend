@@ -1,0 +1,75 @@
+﻿@model Nhom8_Web.Models.KhachHang
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<div class="container">
+
+    <h3>Bạn có thật sự muốn xóa khách hàng này?</h3>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.HoVaTen)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.HoVaTen)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DiaChi)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DiaChi)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.SDT)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.SDT)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.HinhAnh)
+            </dt>
+
+            <dd>
+                @if (Model.HinhAnh != null)
+                {
+                    <img src="data:image;base64,@System.Convert.ToBase64String(Model.HinhAnh)"
+                         style="width: 200px;" />
+                }
+                else
+                {
+                    <!-- Hiển thị hình ảnh rỗng hoặc thông báo khác khi HinhAnh là null -->
+                    <span>No Image</span>
+                }
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class=" custom-button" /> 
+                <a href="@Url.Action("Index")" class="custom-button">Quay lại danh sách</a>
+            </div>
+        }
+    </div>
+</div>
+

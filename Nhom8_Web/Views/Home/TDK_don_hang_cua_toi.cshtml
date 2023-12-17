@@ -1,0 +1,341 @@
+﻿
+@{
+    ViewBag.Title = "TDK_don_hang_cua_toi";
+}
+
+
+<!--====== App Content ======-->
+<div class="app-content">
+
+
+    <!--====== Section 1 ======-->
+    <div class="u-s-p-y-60">
+
+
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="container">
+                <div class="breadcrumb">
+                    <div class="breadcrumb__wrap">
+                        <ul class="breadcrumb__list">
+                            <li class="has-separator">
+
+
+                                <a href="@Url.Action("index", "Home")">Home</a>
+                            </li>
+                            <li class="is-marked">
+
+
+                                <a href="@Url.Action("TDK_Bang_dieu_khien", "Home")">Tài khoản của tôi</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== End - Section 1 ======-->
+    <!--====== Section 2 ======-->
+    <div class="u-s-p-b-60">
+
+
+        <!--====== Section Content ======-->
+        <div class="section__content">
+            <div class="dash">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12">
+
+
+                            <!--====== Dashboard Features ======-->
+                            <div class="dash__box dash__box--bg-white dash__box--shadow u-s-m-b-30">
+                                <div class="dash__pad-1">
+
+
+                                    <span class="dash__text u-s-m-b-16">Chào cậu!</span>
+                                    <ul class="dash__f-list">
+                                        <li>
+
+
+                                            <a class="dash-active" href="@Url.Action("TDK_Bang_dieu_khien", "Home")">Quản lí tài khoản</a>
+                                        </li>
+                                        <li>
+
+
+                                            <a href="@Url.Action("TDK_thong_tin_cua_toi", "Home")">Thông tin cá nhân</a>
+                                        </li>
+                                        <li>
+
+
+                                            <a href="@Url.Action("TDK_dia_chi_giao_hang_book", "Home")">Địa chỉ giao hàng</a>
+                                        </li>
+                                        <li>
+
+
+                                            <a href="@Url.Action("TDK_theo_doi_don_hang", "Home")">Theo dõi đơn hàng</a>
+                                        </li>
+                                        <li>
+
+
+                                            <a href="@Url.Action("TDK_don_hang_cua_toi", "Home")">Đơn hàng của bạn</a>
+                                        </li>
+                                        <li>
+
+
+                                            <a href="@Url.Action("TDK_phuong_thuc_thanh_toan", "Home")">Lựa chọn phương thức thanh toán</a>
+                                        </li>
+                                        <li>
+
+
+                                            <a href="@Url.Action("TDK_huy_don_hang", "Home")">Đơn trả & huỷ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dash__box dash__box--bg-white dash__box--shadow dash__box--w">
+                                <div class="dash__pad-1">
+                                    <ul class="dash__w-list">
+                                        <li>
+                                            <div class="dash__w-wrap">
+
+
+                                                <span class="dash__w-icon dash__w-icon-style-1"><i class="fas fa-cart-arrow-down"></i></span>
+
+
+                                                <span class="dash__w-text">4</span>
+
+
+                                                <span class="dash__w-name">Đơn đã đặt</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dash__w-wrap">
+
+
+                                                <span class="dash__w-icon dash__w-icon-style-2"><i class="fas fa-times"></i></span>
+
+
+                                                <span class="dash__w-text">0</span>
+
+
+                                                <span class="dash__w-name">Đơn huỷ</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dash__w-wrap">
+
+
+                                                <span class="dash__w-icon dash__w-icon-style-3"><i class="far fa-heart"></i></span>
+
+
+                                                <span class="dash__w-text">3</span>
+
+
+                                                <span class="dash__w-name">Yêu thích</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--====== End - Dashboard Features ======-->
+
+                        </div>
+                        <div class="col-lg-9 col-md-12">
+                            <div class="dash__box dash__box--shadow dash__box--radius dash__box--bg-white u-s-m-b-30">
+                                <div class="dash__pad-2">
+                                    <h1 class="dash__h1 u-s-m-b-14">Đơn hàng của tôi</h1>
+
+
+                                    <span class="dash__text u-s-m-b-30">Xem các sản phẩm đã giao cho bạn tại đây</span>
+                                    <form class="m-order u-s-m-b-30">
+                                        <div class="m-order__select-wrapper">
+
+
+                                            <label class="u-s-m-r-8" for="my-order-sort">Hiển thị:</label><select class="select-box select-box--primary-style" id="my-order-sort">
+                                                <option selected>7 ngày gần nhất</option>
+                                                <option> 15 ngày gần nhất</option>
+                                                <option> 30  ngày gần nhất</option>
+                                                <option> 6 tháng gần nhất</option>
+                                                <option>Những đơn hàng trong năm 2020</option>
+                                                <option>Những đơn hàng trong năm 2021</option>
+                                                <option>Những đơn hàng trong năm 2022</option>
+                                                <option>Những đơn hàng trong năm 2023</option>
+                                                <option>Tất cả đơn hàng</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                    <div class="m-order__list">
+                                        <div class="m-order__get">
+                                            <div class="manage-o__header u-s-m-b-30">
+                                                <div class="dash-l-r">
+                                                    <div>
+                                                        <div class="manage-o__text-2 u-c-secondary">Đơn hàng #305423126</div>
+                                                        <div class="manage-o__text u-c-silver"> Đặt vào 3 tháng 12 năm 2023 09:08:37</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="dash__link dash__link--brand">
+
+
+                                                            <a href="@Url.Action("TDK_quan_ly_don_hang", "Home")">XEM</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="manage-o__description">
+                                                <div class="description__container">
+                                                    <div class="description__img-wrap">
+
+
+                                                        <img class="u-img-fluid" src="https://media.discordapp.net/attachments/856338901069070347/1174410747518914580/vn-11134207-7r98o-lln2y2a6fqnwda.png?ex=65677e3d&is=6555093d&hm=b0d5fe944760d748c5f16d8c34bd436257a01c84e17c76274800cf08dd7f2008&=&width=575&height=575" alt="">
+                                                    </div>
+                                                    <div class="description-title">Balo siêu xinh dành cho chó mèo</div>
+                                                </div>
+                                                <div class="description__info-wrap">
+                                                    <div>
+
+
+                                                        <span class="manage-o__badge badge--processing">Đang xử lí</span>
+                                                    </div>
+                                                    <div>
+                                                        c
+                                                        <span class="manage-o__text-2 u-c-silver">
+                                                            Số lượng:
+
+
+                                                            <span class="manage-o__text-2 u-c-secondary">1</span>
+                                                        </span>
+                                                    </div>
+                                                    <div>
+
+
+                                                        <span class="manage-o__text-2 u-c-silver">
+                                                            Tổng:
+
+
+                                                            <span class="manage-o__text-2 u-c-secondary">245.000 vnđ</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="m-order__get">
+                                            <div class="manage-o__header u-s-m-b-30">
+                                                <div class="dash-l-r">
+                                                    <div>
+                                                        <div class="manage-o__text-2 u-c-secondary">Đơn hàng #305423127</div>
+                                                        <div class="manage-o__text u-c-silver">Đặt vào ngày 26 tháng 11 năm 2023 09:08:37</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="dash__link dash__link--brand">
+
+
+                                                            <a href="@Url.Action("TDK_quan_ly_don_hang", "Home")">Xem</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="manage-o__description">
+                                                <div class="description__container">
+                                                    <div class="description__img-wrap">
+
+
+                                                        <img class="u-img-fluid" src="https://media.discordapp.net/attachments/856338901069070347/1174418116596465664/dogology-hoa-hong-749.png?ex=6567851a&is=6555101a&hm=ad5ece152835b4eb9c2d07a9c939f732737d0434f653c9483bb8b577ddb7e536&=&width=567&height=567" alt="">
+                                                    </div>
+                                                    <div class="description-title">Sữa tắm cho cún siêu khử mùi Dogology</div>
+                                                </div>
+                                                <div class="description__info-wrap">
+                                                    <div>
+
+
+                                                        <span class="manage-o__badge badge--shipped">Đã giao</span>
+                                                    </div>
+                                                    <div>
+
+
+                                                        <span class="manage-o__text-2 u-c-silver">
+                                                            Số lượng:
+
+
+                                                            <span class="manage-o__text-2 u-c-secondary">1</span>
+                                                        </span>
+                                                    </div>
+                                                    <div>
+
+
+                                                        <span class="manage-o__text-2 u-c-silver">
+                                                            Tổng:
+
+
+                                                            <span class="manage-o__text-2 u-c-secondary">99.000đ</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="m-order__get">
+                                            <div class="manage-o__header u-s-m-b-30">
+                                                <div class="dash-l-r">
+                                                    <div>
+                                                        <div class="manage-o__text-2 u-c-secondary">Đơn hàng #305423128</div>
+                                                        <div class="manage-o__text u-c-silver">Đặt vào ngày 16 tháng 9 năm 2023 09:08:37</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="dash__link dash__link--brand">
+
+
+                                                            <a href="@Url.Action("TDK_quan_ly_don_hang", "Home")">XEM</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="manage-o__description">
+                                                <div class="description__container">
+                                                    <div class="description__img-wrap">
+
+
+                                                        <img class="u-img-fluid" src="https://media.discordapp.net/attachments/856338901069070347/1174419704325079150/102726027_1333029323568760_565537040925989134_n.png?ex=65678695&is=65551195&hm=37d606e4ab23dbcce31600dffdae1142ea15570e8a327dd397a8c3bcaa9e934f&=&width=851&height=567" alt="">
+                                                    </div>
+                                                    <div class="description-title">Cốm dinh dưỡng cho chó mèo</div>
+                                                </div>
+                                                <div class="description__info-wrap">
+                                                    <div>
+
+
+                                                        <span class="manage-o__badge badge--delivered">Hoàn thành</span>
+                                                    </div>
+                                                    <div>
+
+
+                                                        <span class="manage-o__text-2 u-c-silver">
+                                                            Số lượng:
+
+
+                                                            <span class="manage-o__text-2 u-c-secondary">1</span>
+                                                        </span>
+                                                    </div>
+                                                    <div>
+
+
+                                                        <span class="manage-o__text-2 u-c-silver">
+                                                            Tổng:
+
+
+                                                            <span class="manage-o__text-2 u-c-secondary">129.000đ</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Section Content ======-->
+    </div>
+    <!--====== End - Section 2 ======-->
+</div>
+<!--====== End - App Content ======-->

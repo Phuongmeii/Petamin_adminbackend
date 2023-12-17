@@ -1,0 +1,45 @@
+﻿@model Nhom8_Web.Models.Blog
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<div class="container">
+
+    <h2>Xóa blog</h2>
+
+    <h3>Bạn có thật sự muốn xóa blog này?</h3>
+    <div>
+        <h4>Blog</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.TenBlog)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TenBlog)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.NoiDung)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NoiDung)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="custom-button" /> 
+                <a href="@Url.Action("Index")" class="custom-button">Quay lại danh sách</a>
+            </div>
+        }
+    </div>
+</div>
+
